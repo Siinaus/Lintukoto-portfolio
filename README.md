@@ -32,7 +32,7 @@ Roolini sovelluksen teknisessä toteutuksessa oli front-endin kehittäjänä. Si
 ### Asetukset sivu
 
 
-```markdown
+```javascript
 <h1>Asetukset</h1>
     <form (ngSubmit)="onSubmit(form1.value)" #form1="ngForm">
       <div class="form-group">
@@ -200,7 +200,7 @@ Roolini sovelluksen teknisessä toteutuksessa oli front-endin kehittäjänä. Si
 
 #### Toteutus
 
-[Image](https://jamkstudent-my.sharepoint.com/:i:/g/personal/m2936_student_jamk_fi/ETXxptZ0d49Nm38MbstL78QBuftxZrgHmPfWfxyKU5RFhw?e=xw7q4Z)
+![Image](https://jamkstudent-my.sharepoint.com/:i:/g/personal/m2936_student_jamk_fi/ETXxptZ0d49Nm38MbstL78QBuftxZrgHmPfWfxyKU5RFhw?e=xw7q4Z)
 
 #### Haasteet
 
