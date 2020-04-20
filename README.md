@@ -200,7 +200,7 @@ Roolini sovelluksen teknisessä toteutuksessa oli front-endin kehittäjänä. Si
 
 #### Toteutus
 
-![Image of asetuksetsivu](https://jamkstudent-my.sharepoint.com/personal/m2936_student_jamk_fi/Documents/Kuvat/Asetukset_sivu1.PNG)
+![Image of asetuksetsivu](https://drive.google.com/file/d/19FTPe9r8nwSvxBD4jOeSDxPTwzA-46Kz/view?usp=sharing)
 
 #### Haasteet
 
