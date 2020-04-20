@@ -31,174 +31,11 @@ Roolini sovelluksen teknisessä toteutuksessa oli front-endin kehittäjänä. Si
 
 ### Asetukset sivu
 
+#### Toteutus
 
 ```javascript
-<h1>Asetukset</h1>
-    <form (ngSubmit)="onSubmit(form1.value)" #form1="ngForm">
-      <div class="form-group">
-        <label for="aloituspaiva">Opintojen aloituspäivä</label>
-        <br/>
-        <input
-          type="text" [value]="tunnus" hidden [(ngModel)]="asetuslomake.tunnus" name="tunnus"/>
-        <!--Max-arvo on tällä puolella 2020-05-05 mutta ts-tiedoston puolelta siihen syötetään aina current date, 
-            joten tästä ei tarvitse välittää-->
-        <input
-          type="date" id="datefield" min="1990-01-01" max="2020-05-05" [(ngModel)]="asetuksetLadattu.asetukset.aloituspaiva"
-          name="aloituspaiva" class="form-control" [value]="asetuksetLadattu.asetukset.aloituspaiva"/>
-      </div>
-
-      <div class="form-group">
-        <label for="ryhmatunnus">Ryhmätunnus</label>
-        <br/>
-        <input
-          type="text" [(ngModel)]="asetuksetLadattu.asetukset.ryhmatunnus" class="form-control"
-          name="ryhmatunnus" [value]="asetuksetLadattu.asetukset.ryhmatunnus"
-        />
-      </div>
-
-      <div class="form-group">
-        <label class="bold" for="kokonaisOp"
-          >Koulutusohjelman opintopisteiden kokonaismäärä</label
-        ><br />
-        <input
-          type="number"
-          min="0"
-          max="800"
-          [(ngModel)]="asetuksetLadattu.asetukset.kokonaisOp"
-          class="form-control"
-          name="kokonaisOp"
-          [placeholder]="asetuksetLadattu.asetukset.kokonaisOp"
-          [value]="asetuksetLadattu.asetukset.kokonaisOp"
-        />
-      </div>
-
-      <!--checkboxit tästä eteenpäin-->
-      <!--checkboxeilla varmistetaan kiinnostusta yhdessä opiskeluun, pöllöjen näkyminen sivuilla sekä henkipöllön asetukset-->
-      <div class="form-check">
-        <label class="form-check-label bold" for="yhteisetTuokiot"
-          >Olen kiinnostunut osallistumaan mahdollisiin ryhmäni
-          opiskelutuokioihin</label
-        ><br />
-        <input
-          type="checkbox"
-          [(ngModel)]="asetuksetLadattu.asetukset.yhteisetTuokiot"
-          name="yhteisetTuokiot"
-          class="form-check-input"
-        />
-        Kyllä<br />
-      </div>
-
-      <div class="form-check">
-        <label class="form-check-label bold" for="pollojenNakyminen"
-          >Haluan nähdä pöllöt sovelluksessani:</label
-        ><br />
-        <input
-          type="checkbox"
-          [(ngModel)]="asetuksetLadattu.asetukset.pollojenNakyminen"
-          checked="checked"
-          name="pollojenNakyminen"
-          class="form-check-input"
-        />
-        Kyllä<br />
-      </div>
-
-      <div class="form-check">
-        <label class="form-check-label bold" for="henkipollonAsetukset"
-          >Haluan nämä Henkipöllön ominaisuudet:</label
-        ><br />
-        <div>
-          <label
-            class="form-check-label labeli"
-            for="henkipolloOpinnot"
-          ></label>
-          <input
-            type="checkbox"
-            [(ngModel)]="asetuksetLadattu.asetukset.henkipolloOpinnot"
-            name="henkipolloOpinnot"
-            checked="checked"
-            class="form-check-input inblock"
-          />
-          Tervehdys sisäänkirjautuessa
-        </div>
-        <!-- Opinnot<br /> -->
-        <div>
-          <label class="form-check-label labeli" for="henkipolloElama"></label>
-          <input
-            type="checkbox"
-            [(ngModel)]="asetuksetLadattu.asetukset.henkipolloElama"
-            name="henkipolloElama"
-            checked="checked"
-            class="form-check-input inblock"
-          />
-          Kehut suoritettuani jotain
-        </div>
-        <!-- Elämänhallinta<br /> -->
-        <div>
-          <label
-            class="form-check-label labeli"
-            for="henkipolloValistus"
-          ></label>
-          <input
-            type="checkbox"
-            [(ngModel)]="asetuksetLadattu.asetukset.henkipolloValistus"
-            name="henkipolloValistus"
-            checked="checked"
-            class="form-check-input inblock"
-          />
-          Apu jos opinnoissa on haasteita
-        </div>
-        <!-- Valistus<br /> -->
-      </div>
-
-      <!--Radio-napit, joilla kysytään onko opiskeluajankohdalla väliä-->
-      <div class="form-check">
-        <label class="form-check-label bold" for="opiskeluajankohta"
-          >Opiskelen tehokkaimmin tähän aikaan päivästä:</label
-        ><br />
-        <input
-          type="radio"
-          name="opiskeluajankohta"
-          [(ngModel)]="asetuksetLadattu.asetukset.opiskeluajankohta"
-          class="form-check-input"
-          value="milloinVain"
-        />
-        Mihin aikaan vain<br />
-        <input
-          type="radio"
-          name="opiskeluajankohta"
-          [(ngModel)]="asetuksetLadattu.asetukset.opiskeluajankohta"
-          class="form-check-input"
-          value="aamupaiva"
-        />
-        Aamupäivä<br />
-        <input
-          type="radio"
-          name="opiskeluajankohta"
-          [(ngModel)]="asetuksetLadattu.asetukset.opiskeluajankohta"
-          class="form-check-input"
-          value="iltapaiva"
-        />
-        Iltapäivä<br />
-      </div>
-
-      <!--Tallennusnappi-->
-      <div class="btn-container">
-        <div>
-          <button
-            class=" btn btn-primary tallennusnappi"
-            type="submit"
-            value="Submit"
-          >
-            Tallenna
-          </button>
-          <p id="ilmoitus" class="piilotaIlmoitus">Asetukset tallennettu!</p>
-        </div>
-      </div>
-    </form>
-  </div>
+TÄHÄN TULEE KOODIA
 ```
-
-#### Toteutus
 
 [![IMAGE ALT TEXT HERE](http://img.https://youtu.be/4IdeC9F5ZmI/0.jpg)](https://youtu.be/4IdeC9F5ZmI)
 
@@ -212,6 +49,10 @@ Roolini sovelluksen teknisessä toteutuksessa oli front-endin kehittäjänä. Si
 
 #### Toteutus
 
+```javascript
+TÄHÄN TULEE KOODIA
+```
+
 #### Haasteet
 
 #### Oppiminen
@@ -222,6 +63,10 @@ Roolini sovelluksen teknisessä toteutuksessa oli front-endin kehittäjänä. Si
 
 #### Toteutus
 
+```javascript
+TÄHÄN TULEE KOODIA
+```
+
 #### Haasteet
 
 #### Oppiminen
@@ -231,6 +76,10 @@ Roolini sovelluksen teknisessä toteutuksessa oli front-endin kehittäjänä. Si
 ### Henkipöllön kommentointi-ikkuna
 
 #### Toteutus
+
+```javascript
+TÄHÄN TULEE KOODIA
+```
 
 #### Haasteet
 
