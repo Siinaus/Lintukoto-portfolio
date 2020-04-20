@@ -67,8 +67,7 @@ TÄHÄN TULEE KOODIA
 
 ### Alkuperäinen sisäänkirjautuminen
 
-![henkipollon tervehdysikkuna](./Sovelluskuvat/Kirjautumis_sivu1.PNG =250x)
-<img src="./Sovelluskuvat/Kirjautumis_sivu1.PNG" width="200">
+<img src="./Sovelluskuvat/Kirjautumis_sivu1.PNG" width="500">
 
 Koska sovellus on jokaisella käyttäjällä henkilökohtainen, tarvitaan mahdollisuus kirjautua sisään. Samalla luotiin sovellukseen auth guard, jotta sovelluksen muille sivuille ei pääse ilman, että on kirjautunut sisään.
 
@@ -86,8 +85,7 @@ TÄHÄN TULEE KOODIA
 
 ### Henkipöllön kommentointi-ikkuna
 
-![henkipollon tervehdysikkuna](./Sovelluskuvat/Sisaankirjautumisen_tervehdys.PNG =250x)
-<img src="./Sovelluskuvat/Sisaankirjautumisen_tervehdys.PNG" width="200">
+<img src="./Sovelluskuvat/Sisaankirjautumisen_tervehdys.PNG" width="300">
 
 Henkipöllön kommentointi-ikkuna ilmestyy kun käyttäjä kirjautuu sisälle ja kun tämä saa kurssitehtävän tehtyä. Sisääbkirjautumisen osalta toiminnon saa pois asetuksista.
 
