@@ -67,7 +67,7 @@ TÄHÄN TULEE KOODIA
 
 ### Alkuperäinen sisäänkirjautuminen
 
-TÄHÄN TULEE VIDEO TAI KUVA
+![henkipollon tervehdysikkuna](./Sovelluskuvat/Sisaankirjautumisen_tervehdys.PNG)
 
 Koska sovellus on jokaisella käyttäjällä henkilökohtainen, tarvitaan mahdollisuus kirjautua sisään. Samalla luotiin sovellukseen auth guard, jotta sovelluksen muille sivuille ei pääse ilman, että on kirjautunut sisään.
 
