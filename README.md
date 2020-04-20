@@ -200,9 +200,7 @@ Roolini sovelluksen teknisessä toteutuksessa oli front-endin kehittäjänä. Si
 
 #### Toteutus
 
-<a href="https://youtu.be/4IdeC9F5ZmI
-" target="_blank"><img src="https://youtu.be/4IdeC9F5ZmI/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+[![IMAGE ALT TEXT HERE](http://img.https://youtu.be/4IdeC9F5ZmI/0.jpg)](https://youtu.be/4IdeC9F5ZmI)
 
 #### Haasteet
 
