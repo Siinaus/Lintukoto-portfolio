@@ -200,7 +200,8 @@ Roolini sovelluksen teknisessä toteutuksessa oli front-endin kehittäjänä. Si
 
 #### Toteutus
 
-![Image](https://jamkstudent-my.sharepoint.com/:i:/g/personal/m2936_student_jamk_fi/ETXxptZ0d49Nm38MbstL78QBuftxZrgHmPfWfxyKU5RFhw?e=xw7q4Z)
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image of asetuksetsivu](https://jamkstudent-my.sharepoint.com/:i:/g/personal/m2936_student_jamk_fi/ETXxptZ0d49Nm38MbstL78QBuftxZrgHmPfWfxyKU5RFhw?e=xw7q4Z)
 
 #### Haasteet
 
