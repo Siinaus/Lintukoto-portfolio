@@ -31,22 +31,28 @@ Roolini sovelluksen teknisessä toteutuksessa oli front-endin kehittäjänä. Si
 
 ### Asetukset sivu
 
+TÄHÄN TULEE VIDEO TAI KUVA
+
+Nimensä mukaan, asetukset sivun tarkoitus on antaa käyttäjälle mahdollisuus lisätä omia henkilökohtaisia toiveita sovelluksen osalta. Kaikille asetukset sivun kohdille oli mietitty vaikutukset sovelluksessa, mutta kaikkia ei ehditty toteuttaa kevään aikana. Asetuksien lomakkeessa on kuitenkin kohdat valmiina, vaikka kaikkien osien takana ei olekaan toiminnallisuuksia.
+
 #### Toteutus
 
 ```javascript
 TÄHÄN TULEE KOODIA
 ```
 
-[![IMAGE ALT TEXT HERE](http://img.https://youtu.be/4IdeC9F5ZmI/0.jpg)](https://youtu.be/4IdeC9F5ZmI)
-
 #### Haasteet
 
 #### Oppiminen
 
-
+***
 
 ### Henkipöllön pesäsivu
 
+TÄHÄN TULEE VIDEO TAI KUVA
+
+Henkipöllön pesäsivulle on koottu opiskelijalle hyödyllisiä linkkejä. Tämä on yksinkertainen staattinen sivu joka oli nopea tehdä. Sivun sisältö koottiin yhteistyöhön opinto-ohjaajan kanssa.
+
 #### Toteutus
 
 ```javascript
@@ -57,10 +63,14 @@ TÄHÄN TULEE KOODIA
 
 #### Oppiminen
 
-
+***
 
 ### Alkuperäinen sisäänkirjautuminen
 
+TÄHÄN TULEE VIDEO TAI KUVA
+
+Koska sovellus on jokaisella käyttäjällä henkilökohtainen, tarvitaan mahdollisuus kirjautua sisään. Samalla luotiin sovellukseen auth guard, jotta sovelluksen muille sivuille ei pääse ilman, että on kirjautunut sisään.
+
 #### Toteutus
 
 ```javascript
@@ -71,10 +81,14 @@ TÄHÄN TULEE KOODIA
 
 #### Oppiminen
 
-
+***
 
 ### Henkipöllön kommentointi-ikkuna
 
+TÄHÄN TULEE VIDEO TAI KUVA
+
+Henkipöllön kommentointi-ikkuna ilmestyy kun käyttäjä kirjautuu sisälle ja kun tämä saa kurssitehtävän tehtyä. Sisääbkirjautumisen osalta toiminnon saa pois asetuksista.
+
 #### Toteutus
 
 ```javascript
@@ -84,7 +98,6 @@ TÄHÄN TULEE KOODIA
 #### Haasteet
 
 #### Oppiminen
-
 
 
 ## Tuoteomistajana toimiminen
