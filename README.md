@@ -29,9 +29,9 @@ Dokumentista käy ilmi odotukseni opintojkasolle ja niiden myötä asetetut oppi
 
 ### Asetetut oppimistavoitteet
 
-Vielä kurssin alkaessa olin hyvin epävarma omasta roolistani tiimissä. Puntaroin todella pitkään valitsenko roolin, jossa olen jo kehittynyt (liiketoiminta) vai roolin, jota tuntui etten hahmottanut yhtään (tekniikka). Ohjaajat kuitenkin painottivat, että valitkaa aihe jossa haluatte ensisijaisesti kehittyä. Siksi päätin valita teknisen roolin.
+Vielä kurssin alkaessa olin hyvin epävarma omasta roolistani tiimissä. Puntaroin todella pitkään valitsenko roolin, jossa olen jo kehittynyt (liiketoiminta) vai roolin, jota tuntui etten hahmottanut yhtään (tekniikka). Ohjaajat kuitenkin painottivat, että valitkaa aihe jossa haluatte ensisijaisesti kehittyä. Siksi päätin valita teknisen roolin. Haluaisin joskus vielä työllistyä ohjelmistotuotannon parissa. Myös testaajan rooli kiinnosti minua sivutoimeksi, mutta tiimissämme oli siihen niin paljon halukkaita, että päätin pitäytyä tuoteomistajana roolissa siltä osin.
 
-Olin kyllä käynyt web-sovelluskehitys-kurssia koko syksyn aktiivisesti, mutta se maailma ei ollut vielä yhtään avautunut minulle. Tiedän, että opin parhaiten tekemällä, mutta tekemistä helpottaisi jos hahmottaisi isossa kuvassa asioiden merkityksen.
+Olin kyllä käynyt web-sovelluskehitys-kurssia koko syksyn aktiivisesti, mutta sovelluskehityksen maailma ei ollut vielä yhtään avautunut minulle. Tiedän, että opin parhaiten tekemällä, mutta tekemistä helpottaisi jos hahmottaisi isossa kuvassa asioiden merkityksen.
 >**Päätin asettaa ensisijaiseksi tavoitteekseni, että sovelluskehityksen maailma alkaisi avautua minulle.**
 
 Näin ymmärtäisin eri asioiden merkityksen ja roolin paremmin. Nollatasolta suunta on kuitenkin vain ylöspäin.
@@ -45,9 +45,13 @@ Selkeitä konkreettisia maaleja oli haastava asettaa, koska kokonaiskuvankin hah
 
 Se on kuitenkin jokin konkreettinen asian jota voi suoraan soveltaa tulevaisuudessa työelämässä. Siksi otin tuoteomistajan roolin mielelläni vastaan. Siitä saa eturivin paikat seurata prosessin pyörittämistä ja olla siihen osallisena. Scrum masterina toimiminen olisi ollut myös vaihtoehto, mutta olin soveltuvin PO-rooliin, joten otin sen siksi ennemmin vastaan.
 
-
 ### Toteutunut oppiminen
+Oppimistavoitteeni alkoivat toteutua toteutua pienin askelin.
+Ensimmäisenä saavutin ymmärrykseni scrumin prosessien pyörittämisestä. Tein tiivistä yhteistyötä tiimimme scrum masterin kanssa ja sitä kautta scrumin seremoniat kävivät tutuiksi. Otin tarkoituksella vastuuta planningien vetämisestä ZenHubin osalta ja tarvittaessa tuurasin scrum masteria myös dailyen pitämisessä. Saavutin siis kolmannen oppimistavoitteeni hyvin!
 
+Kun teki koodin kanssa paljon töitä viikottain, tarkasti muiden aikaansaannoksia pull requestien osalta ja oppi sitä kautta erilaisien ratkaisuiden käytöstä ja soveltamisesta, huomasin että pikkuhiljaa sovelluskehityksen maailma alkoi avautua minulle. Siihen meni ensimmäiset pari kuukautta. Sitten satuin saamaan kesätöitä alan firmasta Angular-käyttöliittymän kehittäjänä ja se oli selvä merkki minulle, että olen selvästi oppinut jotain olennaista sinä aikana kun olen tätä sovellusprojektia tehnyt. En minä muuten olisi saanut sitä työtä. Työn saaminen myös motivoi minua opiskelemaan Angularia enemmän ja sen jälkeen ymmärrykseni Angularista parani paljon ja sain tehtyä jo hieman haastavampia osia sovellukseen. Tuntui silti, että aika alkoi loppua kesken eikä huhtikuulla ollut enää aikaa tehdä isoja ja monimutkaisia palasia sovellukseen. Kuukaudenkin lisäajalla, olisin saanut varmasti tehtyä enemmän haastavampia osia sovellukseen. Kaiken kaikkiaan, olen selvästi oppinut paljon sovelluskehityksestä ja Angularista. Uskon, että pohjatiedot ovat ihan hyvät kesätyötä varten.
+
+Backend oli minulle pitkään iso mörkö, joten vaikka sovelluksemme backend ei ollutkaan minun vastuullani, opiskelin sitä myös kevään aikana. Halusin etenkin ymmärtää frontin ja backin liitoskohtia paremmin. Pikkuhiljaa tämäkin alkoi seljetä minulle. Ei ehkä ihan niin selkeäksi mitä olin odottanut, mutta sen verta tarpeeksi, että osasin hyödyntää sovelluksemme tietokannasta tietoa frontin puolelle. Ymmärrän siis teoriassa mitä palvelinpuoli ja tietokannat vaativat, vaikka en niitä osaisikaan luoda tällaisen sovelluksen vaatimassa mittakaavassa.
 
 ## Tekniset toteutukset
 Roolini sovelluksen teknisessä toteutuksessa oli front-endin kehittäjänä. Siksi myös konkreettiset tuotokset ovat kaikki käyttöliittymän kehittämisestä.
@@ -72,19 +76,25 @@ TÄHÄN TULEE KOODIA
 
 ### Henkipöllön pesäsivu
 
-TÄHÄN TULEE VIDEO TAI KUVA
-
 Henkipöllön pesäsivulle on koottu opiskelijalle hyödyllisiä linkkejä. Tämä on yksinkertainen staattinen sivu joka oli nopea tehdä. Sivun sisältö koottiin yhteistyöhön opinto-ohjaajan kanssa.
 
 #### Toteutus
+
+Asetukset sivun ensimmäinen versio
+<img src="./Sovelluskuvat/Eka_asetuksetsivu.PNG" width="500">
+
+Toinen versio
+<img src="./Sovelluskuvat/Asetuksetsivun_kehitys.PNG" width="500">
+
+Kolmas ja viimeinen versio
+<img src="./Sovelluskuvat/Asetuksetsivu.PNG" width="500">
 
 ```javascript
 TÄHÄN TULEE KOODIA
 ```
 
-#### Haasteet
+#### Haasteet ja oppiminen
 
-#### Oppiminen
 
 ***
 
