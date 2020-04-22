@@ -78,8 +78,26 @@ Samalla luotiin sovellukseen auth guard, jotta sovelluksen muille sivuille ei p�
 Alkuun tarvittiin vain väliaikainen sisäänkirjautuminen, jonka voi myöhemmin korvata kunhan saadaan useampia käyttäjätunnuksia suoraan tietokannasta. Tästä syystä tein ihan yksinkertainen "admin"-tunnuksen. Tällöin sovelluksessa ei ollut vielä yhteyttä tietokantaan, joten tässä vaiheessa projektia hyödynnettiin in-memory-web-api'a.
 
 Sisäänkirjautuminen oli yksinkertainen sisäänkirjautumislomake.
-*kirjautuminen.html*
+
+**kirjautuminen.html**
 ```html
+<div class="tekstit">
+  <h1 class="otsikko">Lintukoto</h1>
+  <p>
+    Lintukoto on opiskelijoiden ajanhallintaa helpottava sovellus.<br />
+    Pääset sovellukseen kirjautumalla henkilökohtaisella käyttäjätunnuksella ja
+    salasanalla.
+  </p>
+  <div class="kuva">
+    <img
+      src="../../assets/images/LOGO_ilman_taustaa.png"
+      id="lintukoto_logo"
+      alt="Lintukoto-sovelluksen logo"
+    />
+  </div>
+</div>
+
+<!--Sisäänkirjautumisen lomake-->
   <div class="login">
     <h2 class="login-header">Kirjaudu</h2>
     <form [formGroup]="loginForm" class="login-container" (ngSubmit)="onSubmit(loginForm.value)">
@@ -91,7 +109,8 @@ Sisäänkirjautuminen oli yksinkertainen sisäänkirjautumislomake.
 ```
 
 Komponentin ts-tiedostossa otettiin lomakkeen tiedot vastaan ja annettiin käyttäjälle tieto onnistuiko sisäänkirjautuminen, mutta varsinalliset toiminnallisuudet olivat serviceillä.
-*kirjautuminen.ts*
+
+**kirjautuminen.ts**
 ```javascript
 constructor(private FormBuilder: FormBuilder, private AuthService: AuthService) {
     this.loginForm = this.FormBuilder.group( {username: '', password: ''} );
@@ -115,7 +134,8 @@ constructor(private FormBuilder: FormBuilder, private AuthService: AuthService) 
 ```
 
 Servicejä oli kaksi. Ensimmäisessä oli määritelty väliaikaiset käyttäjätunnukset, johon kirjautumiskomponentin ts-tiedosto vertaa lomakkeelle annettuja käyttäjätietoja.
-*User service*
+
+**User service**
 ```javascript
 export class UserService implements InMemoryDbService {
 
@@ -131,7 +151,8 @@ export class UserService implements InMemoryDbService {
 ```
 
 Toinen oli auth-service, jossa oli kirjautumisen kannalta olennaiset toiminnot eli sisään- ja uloskirjautumiset. Jos kirjautuminen oli ok, service päästi käyttäjän etusivulle eli kalenteri-sivulle. Jos käyttäjä kirjautuu ulos, service vie käyttäjän takaisin kirjautumissivulle.
-*Auth service*
+
+**Auth service**
 ```javascript
 export class AuthService {
   private cred;
@@ -160,7 +181,8 @@ export class AuthService {
 ```
 
 Koska ei haluttu, että käyttäjä pääsee näkemään muita sivuja vasta kirjauduttuaan sisään, loin myös sovellukselle perusmuodon auth guardista.
-*Auth guard*
+
+**Auth guard**
 ```javascript
 constructor(private authService: AuthService, private router: Router) {}
 
@@ -209,6 +231,7 @@ Henkipöllön kommentointi-ikkuna ilmestyy kun käyttäjä kirjautuu sisälle ja
 Perusteet tälle löytyi [Angular Material-sivulta](https://material.angular.io/components/dialog/overview).
 Henkipöllön kommentointi-ikkunalle on luotu oma componentti, jossa Henkipöllön mahdollisista kommenteista arvotaan jokin lause avautuvaan dialogi-ikkunaan.
 
+***dialog.ts***
 ```javascript
 // Taulukko, jossa on kaikki tervehdysvaihtoehdot sisäänkirjautuessa
   tervehdykset = [
@@ -233,6 +256,7 @@ Henkipöllön kommentointi-ikkunalle on luotu oma componentti, jossa Henkipöll�
 ```
 Tämä lause viedään html-sivulle yhdessä Henkipöllön kuvan kanssa.
 
+**dialog.html**
 ```html
 <div class="mat-dialog-content">
   <div class="otsikko">
@@ -258,6 +282,7 @@ Sisään kirjautumisen yhteydessä piti myös huomioida, ettei ikkuna saa aueta 
 
 Tarkoitus oli, että asetuksista sai valita, haluaako kommentti-ikkunan avautuvan vai ei. Tämä ominaisuus ehdittiin tehdä sisäänkirjautumisen yhteyteen. Jos asetuksien chackbox on rastitettu, ikkuna avautuu, jos ei niin ikkunakaan ei ilmesty sisäänkirjautumisen yhteydessä.
 
+**kirjautuminen.ts**
 ```typescript
 this.userService.login(this.loginData).subscribe(
       (res: any) => {
@@ -309,8 +334,6 @@ PO:na otin vastuun ZehHub ja GitHub työkalumme käyttöönotosta ja ylläpidost
 Muut PO-toimet joita kevään aikana hoidin:
 * Projektisuunnitelman ja Esitutkimuksen visio-osuuksien kirjoittaminen ja tarvittaessa päivittäminen
 * Alussa sovelluksen sisällön ja ulkoasukuvauksen kouluttaminen tiimille
-* Vaikuttaa sovelluksen visuaalisen ilmeen kehittymiseen
-  * Järjestää palautekeskusteluja ja äänestyksiä ulkoasusta tiimin ulkopuolisten henkilöiden kanssa
 * Bugipalaveri testaajien kanssa bugien priorisoinnista ja määristä
 * Esitysmateriaalien kasaaminen ja esittäminen (demot ja liiketoimintasuunnitelma)
 * Keskustelut opinto-ohjaajan kanssa, jotta sovellus kehittyisi myös opiskelija tuen kannalta oikeaan suuntaan
@@ -318,12 +341,14 @@ Muut PO-toimet joita kevään aikana hoidin:
 
 ## Muut aikaansaannokset
 
-* Visual guide
-* Liiketoimintasuunnitelman materiaalit
-* Markkinointivideossa avustaminen
-* Tietokantasuunnitelmapiirros Henrin kanssa
-* Sovelluksen kehittymisen tallentaminen videomateriaaleihin joka sprintin päätteeksi
-* Mock up kurssitiedot ja kursseille tehtävät
+* [Sovelluksen visuaalisen ulkonäön suunnittelu ja päivittäminen](https://jamkstudent-my.sharepoint.com/:w:/g/personal/m2936_student_jamk_fi/EXnRKCvpEd1OtMOr3yjOFBYBf720on2HdmNHYsQrv0cayg?e=MQmYyj)
+ * Järjestää palautekeskusteluja ja äänestyksiä ulkoasusta tiimin ulkopuolisten henkilöiden kanssa
+* [Liiketoimintasuunnitelman esitysmateriaalit](https://jamkstudent-my.sharepoint.com/:p:/g/personal/m2936_student_jamk_fi/EUvZ9TMCYqtJhHDpyegLaNcB_UtlJJ0N4xBFkNVfnMtSvw?e=v70rov)
+* [Sovelluksen kehittymisen tallentaminen videomateriaaleihin joka sprintin päätteeksi](https://jamkstudent-my.sharepoint.com/:f:/g/personal/m2936_student_jamk_fi/Eho25sOL17RGpsTXLsySCJMBFpXYJQcySCNihfif7jxGWg?e=WpaRh0)
+* [Demoesitysmateriaalien kasaaminen ja esittäminen demoon 1](https://jamkstudent-my.sharepoint.com/:p:/g/personal/m2936_student_jamk_fi/EY3kYf9rKwZBrkIxHETegA0BulTRuRZ2FO_SNjR9og-aIg?e=2KQPBm)
+* [Demoesitysmateriaalien kasaaminen ja esittäminen demoon 2](https://jamkstudent-my.sharepoint.com/:p:/g/personal/m2936_student_jamk_fi/EeM52B7zfy5AoBX6hmTWt4cBSmiVt3QSZM7RASylZq1ZhQ?e=QJKEk2)
+* [Mock up kurssitiedot ja kursseille tehtävät](https://jamkstudent-my.sharepoint.com/:w:/g/personal/m2936_student_jamk_fi/EXWVtOJTJr1Fkj-5na9JDUEBLtzj8ONln5wIYodPhkVTgQ?e=91GFnJ)
 * Tutustuminen sähköisiin allekirjoitustapoihin projektisopimuksen kannalta
+* Markkinointivideossa avustaminen
 
 ## Itsearviointi
