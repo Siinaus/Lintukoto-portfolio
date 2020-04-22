@@ -69,17 +69,132 @@ TÄHÄN TULEE KOODIA
 
 <img src="./Sovelluskuvat/Kirjautumis_sivu1.PNG" width="500">
 
-Koska sovellus on jokaisella käyttäjällä henkilökohtainen, tarvitaan mahdollisuus kirjautua sisään. Samalla luotiin sovellukseen auth guard, jotta sovelluksen muille sivuille ei pääse ilman, että on kirjautunut sisään.
+Koska sovellus on jokaisella käyttäjällä henkilökohtainen, tarvitaan mahdollisuus kirjautua sisään. Ennen kuin käyttäjätunnuksia oli ja tietokantaan oli saatu rakenteet kuntoon, piti luoda tällainen väliaikainen sisäänkirjautuminen. 
+
+Samalla luotiin sovellukseen auth guard, jotta sovelluksen muille sivuille ei pääse ilman, että on kirjautunut sisään.
 
 #### Toteutus
+ 
+Alkuun tarvittiin vain väliaikainen sisäänkirjautuminen, jonka voi myöhemmin korvata kunhan saadaan useampia käyttäjätunnuksia suoraan tietokannasta. Tästä syystä tein ihan yksinkertainen "admin"-tunnuksen. Tällöin sovelluksessa ei ollut vielä yhteyttä tietokantaan, joten tässä vaiheessa projektia hyödynnettiin in-memory-web-api'a.
 
-```javascript
-TÄHÄN TULEE KOODIA
+Sisäänkirjautuminen oli yksinkertainen sisäänkirjautumislomake.
+*kirjautuminen.html*
+```html
+  <div class="login">
+    <h2 class="login-header">Kirjaudu</h2>
+    <form [formGroup]="loginForm" class="login-container" (ngSubmit)="onSubmit(loginForm.value)">
+      <label>Käyttäjätunnus</label><br /> <input type="text" name="username" formControlName = username /><br />
+      <label>Salasana</label><br /> <input type="password" name="password" formControlName = password /><br />
+      <button type="submit">Lähetä</button>
+    </form>
+  </div>
 ```
 
-#### Haasteet
+Komponentin ts-tiedostossa otettiin lomakkeen tiedot vastaan ja annettiin käyttäjälle tieto onnistuiko sisäänkirjautuminen, mutta varsinalliset toiminnallisuudet olivat serviceillä.
+*kirjautuminen.ts*
+```javascript
+constructor(private FormBuilder: FormBuilder, private AuthService: AuthService) {
+    this.loginForm = this.FormBuilder.group( {username: '', password: ''} );
+  }
 
-#### Oppiminen
+  onSubmit(loginData) {
+    console.log(loginData);
+    if (loginData.username === this.cred[0].username && loginData.password === this.cred[0].password) {
+      this.AuthService.login();
+    } else {
+      alert('Väärä tunnus tai salasana!');
+    }
+  }
+
+  ngOnInit() {
+    this.AuthService.getData().subscribe((data: any []) => {
+      this.cred = data;
+    });
+  }
+}
+```
+
+Servicejä oli kaksi. Ensimmäisessä oli määritelty väliaikaiset käyttäjätunnukset, johon kirjautumiskomponentin ts-tiedosto vertaa lomakkeelle annettuja käyttäjätietoja.
+*User service*
+```javascript
+export class UserService implements InMemoryDbService {
+
+  constructor() { }
+
+  createDb() {
+  const user = [
+    { id: 1, username: 'admin', password: 'password' }
+  ];
+  return {user};
+  }
+}
+```
+
+Toinen oli auth-service, jossa oli kirjautumisen kannalta olennaiset toiminnot eli sisään- ja uloskirjautumiset. Jos kirjautuminen oli ok, service päästi käyttäjän etusivulle eli kalenteri-sivulle. Jos käyttäjä kirjautuu ulos, service vie käyttäjän takaisin kirjautumissivulle.
+*Auth service*
+```javascript
+export class AuthService {
+  private cred;
+  credUrl: 'http://localhost:80/api'; // oikeasti tulisi apin osoite
+  loggedIn = false;
+
+  constructor(private http: HttpClient, private router: Router) { }
+
+  getData() {
+    return this.http.get('http://localhost:80/api/user');
+  }
+
+  login() {
+    if (this.loggedIn === false) {
+      this.loggedIn = true;
+      this.router.navigate(['/kalenteri']);
+    }
+  }
+
+  logout() {
+    this.loggedIn = false;
+    this.router.navigate(['/kirjautuminen']);
+    alert('Olet kirjautunut ulos');
+  }
+}
+```
+
+Koska ei haluttu, että käyttäjä pääsee näkemään muita sivuja vasta kirjauduttuaan sisään, loin myös sovellukselle perusmuodon auth guardista.
+*Auth guard*
+```javascript
+constructor(private authService: AuthService, private router: Router) {}
+
+  canActivate(
+    next: ActivatedRouteSnapshot,
+    state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+    const url: string = state.url;
+    return this.checkLogin(url);
+  }
+  checkLogin(url: string): boolean {
+    if (this.authService.loggedIn) {
+      return true;
+    }
+    this.router.navigate(['/kalenteri']);
+    return false;
+  }
+}
+```
+
+Tämä huomioitiin lopuksi routing modulessa, lisäämällä sen hetkisiin reitteihin AuthGuard.
+```javascript
+const routes: Routes = [
+  // canActivate: [AuthGuard] varmistaa että on kirjauduttu sisään, ennen kuin päästään muualle sovelluksessa
+  { path: "kalenteri", component: KalenteriComponent, canActivate: [AuthGuard] },
+  { path: "aktiiviset", component: AktiivisetKurssitComponent, canActivate: [AuthGuard] },
+  { path: "suoritetut", component: SuoritetutKurssitComponent, canActivate: [AuthGuard] },
+  { path: "asetukset", component: AsetuksetComponent, canActivate: [AuthGuard] },
+  { path: "kirjautuminen", component: KirjautuminenComponent },
+  { path: "", component: KirjautuminenComponent },
+];
+```
+
+#### Haasteet ja oppiminen
+
 
 ***
 
@@ -87,14 +202,14 @@ TÄHÄN TULEE KOODIA
 
 <img src="./Sovelluskuvat/Sisaankirjautumisen_tervehdys.PNG" width="300">
 
-Henkipöllön kommentointi-ikkuna ilmestyy kun käyttäjä kirjautuu sisälle ja kun tämä saa kurssitehtävän tehtyä. Sisääbkirjautumisen osalta toiminnon saa pois asetuksista.
+Henkipöllön kommentointi-ikkuna ilmestyy kun käyttäjä kirjautuu sisälle ja kun tämä saa kurssitehtävän tehtyä. Sisäänkirjautumisen osalta toiminnon saa kytkettyä pois asetuksista.
 
 #### Toteutus
 
 Perusteet tälle löytyi [Angular Material-sivulta](https://material.angular.io/components/dialog/overview).
 Henkipöllön kommentointi-ikkunalle on luotu oma componentti, jossa Henkipöllön mahdollisista kommenteista arvotaan jokin lause avautuvaan dialogi-ikkunaan.
 
-```typescript
+```javascript
 // Taulukko, jossa on kaikki tervehdysvaihtoehdot sisäänkirjautuessa
   tervehdykset = [
     "Olet tehnyt upeasti hommia viime aikoina, hyvää työtä!",
