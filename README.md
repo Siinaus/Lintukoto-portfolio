@@ -64,6 +64,19 @@ Nimensä mukaan, asetukset sivun tarkoitus on antaa käyttäjälle mahdollisuus 
 
 #### Toteutus
 
+Kokosin alkuun asetukset sivulle vain 
+Asetukset sivun ensimmäinen versio:
+
+<img src="./Sovelluskuvat/Eka_asetuksetsivu.PNG" width="500">
+
+Toinen versio:
+
+<img src="./Sovelluskuvat/Asetuksetsivun_kehitys.PNG" width="500">
+
+Kolmas ja viimeinen versio:
+
+<img src="./Sovelluskuvat/Asetuksetsivu.PNG" width="500">
+
 ```javascript
 TÄHÄN TULEE KOODIA
 ```
@@ -79,15 +92,6 @@ TÄHÄN TULEE KOODIA
 Henkipöllön pesäsivulle on koottu opiskelijalle hyödyllisiä linkkejä. Tämä on yksinkertainen staattinen sivu joka oli nopea tehdä. Sivun sisältö koottiin yhteistyöhön opinto-ohjaajan kanssa.
 
 #### Toteutus
-
-Asetukset sivun ensimmäinen versio
-<img src="./Sovelluskuvat/Eka_asetuksetsivu.PNG" width="500">
-
-Toinen versio
-<img src="./Sovelluskuvat/Asetuksetsivun_kehitys.PNG" width="500">
-
-Kolmas ja viimeinen versio
-<img src="./Sovelluskuvat/Asetuksetsivu.PNG" width="500">
 
 ```javascript
 TÄHÄN TULEE KOODIA
