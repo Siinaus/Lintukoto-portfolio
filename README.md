@@ -72,13 +72,13 @@ Toiseen versioon oli saatu jo koko asetukset-lomake kasaan ja siihen oli lisätt
 
 Toinen versio:
 
-<img src="./Sovelluskuvat/Asetuksetsivun_kehitys.PNG" width="500">
+<img src="./Sovelluskuvat/Asetuksetsivun_kehitys.PNG" width="600">
 
 Viimeisessä vaiheessa huomattiin, että kaikkien kohtien sanamuotoilut eivät sovi siihen mitä sovelluksessa sillä hetkellä tapahtuu, joten lomakkeen tarkoitusta hieman päivitettiin. Nyt asetuksista näki heti konkreettisesti mihin se vaikuttaa sovelluksessa. Tässä vaiheessa lisättiin myös syötetyn tiedon validointeja ja varmistettiin mm. että opintojen aloituspäivä ei voi olla tulevaisuudessa.
 
 Kolmas ja viimeinen versio:
 
-<img src="./Sovelluskuvat/Asetuksetsivu.PNG" width="500">
+<img src="./Sovelluskuvat/Asetuksetsivu.PNG" width="550">
 
 Tässä vielä esimerkki siitä miltä asetuslomakkeen input-kohdat näyttävät aloituspäivämäärän, ryhmätunnuksen ja opintopistemäärän suhteen.
 
