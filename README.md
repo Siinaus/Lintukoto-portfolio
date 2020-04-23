@@ -170,7 +170,7 @@ Tämä on yksinkertainen staattinen html-sivu joka oli nopea tehdä. Koodillises
 
 <img src="./Sovelluskuvat/Henkipollon_pesa_alku.PNG" width="500">
 
-<img src="./Sovelluskuvat/Henkipollon_pesa.PNG" width="500">
+<img src="./Sovelluskuvat/pesa.PNG" width="500">
 
 Ainoa käytännön syistä lisätty ominaisuus oli, että kun linkkiä painaa, sen takaa avautuva sivu avautuu aina omaan välilehteensä. Alla on esimerkki yhdestä linkkilistan osasta. 
 ```html
@@ -341,6 +341,11 @@ const routes: Routes = [
 
 #### Haasteet ja oppiminen
 
+Sisäänkirjautumisen luomisessa aloin kunnolla hahmottaa serviceiden roolia Angularissa. Tässä sain tehdä niitä kaksi ja molempien roolien ymmärtäminen avasi kyllä ymmärtämistä serviceihin isommassa mittakaavassa.
+
+Myös auth guardin roolin ymmärtäminen parani tätä tehdessä. Auth guard suojaa tietoja jottei niihin pääsisi muut, kuin sisäänkirjautunut käyttäjä, käsiksi. Tiesin tämän kyllä teorian osalta, mutta en käytännössä. 
+
+Tämäkin oli melko aikaisessa vaiheessa kurssia, joten haasteena oli kyky soveltaa aiemmin opittua tähän sovellukseen. On ihan eri asia tehdä kurssitehtävä jossa on pelkästään sisäänkirjaus ja komponentti. Tässä meillä oli jo useampi komponentti joten kesti hetki hahmottaa mihin väliin jo olemassa olevaa koodia, tämä olisi fiksua laittaa niin etten riko muuta. Onnistuin siinä kuitenkin parin yrityksen jälkeen. Välillä meni vähän ristiin mitä pitää importata minnekäkin ja ottaa käyttöön, mutta kyllä se kokeilemalla alkoi seljetä.
 
 ***
 
