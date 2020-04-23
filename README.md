@@ -40,13 +40,13 @@ Nimensä mukaan, asetukset sivun tarkoitus on antaa käyttäjälle mahdollisuus 
 
 #### Toteutus
 
-Kokosin alkuun asetukset sivulle lomakkeen, jossa kysyttiin vain opiskelijan perustietoja. Näin saatiin asetukset sivu sovellukseen ja seuraavaksi suunniteltiin paremmin mitä tietoja asetukset sivulle oikeasti halutaan. Ensimmäisessä versiossa ei ollut tiedon validointia eli syötetty tieto sai olla mitä vain. Myöskään muotoiluita ei lisätty tässä vaiheessa.
+Kokosin alkuun asetukset sivulle lomakkeen, jossa kysyttiin vain opiskelijan perustietoja. Näin saatiin asetukset sivu sovellukseen ja seuraavaksi suunniteltiin paremmin mitä tietoja asetukset sivulle oikeasti halutaan. Ensimmäisessä versiossa ei ollut tiedon validointia eli syötetty tieto sai olla mitä vain. Myöskään sivun css-muotoiluita ei lisätty tässä vaiheessa.
 
 Asetukset sivun ensimmäinen versio:
 
 <img src="./Sovelluskuvat/Eka_asetuksetsivu.PNG" width="500">
 
-Toiseen versioon oli saatu jo koko asetukset-lomake kasaan ja siihen oli lisätty yksinkertaiset muotoilut. Tässä vaiheessa asetuksien tiedot eivät tallentuneet vielä mihinkään, mutta Henri lisäsi tämän jälkeen myös asetuksien tiedot backin puolelle.
+Toiseen versioon oli saatu jo koko asetukset-lomake kasaan ja siihen oli lisätty yksinkertaiset css-muotoilut. Tässä vaiheessa asetuksien tiedot eivät tallentuneet vielä mihinkään, mutta Henri lisäsi tämän jälkeen myös asetuksien tiedot backin puolelle ja paranteli sivun muotoilut loppuun asti.
 
 Toinen versio:
 
@@ -139,13 +139,17 @@ Ihan täysin datan validointia ei saanut kuntoon. Vaikka opintopistemäärällä
 
 ### Henkipöllön pesäsivu
 
-Henkipöllön pesäsivulle on koottu opiskelijalle hyödyllisiä linkkejä. Sivun sisältö koottiin yhteistyöhön opinto-ohjaajan kanssa. Tästä syystä sivun sisältö ja rakenne muuttuivat selvästi alkuperäisestä. Sovelluksessa haluttiin, ottaa huomioon asiakkaan toiveet erityisesti tässä kohden. Olimme kuitenkin määritelleen, että koulut ja heidän viralliset opiskelijoita tukevat tahonsa olivat asiakkaitamme, vaikka opiskelija ovatkin käyttäjiämme.
+Henkipöllön pesäsivulle on koottu opiskelijalle hyödyllisiä linkkejä. Sivun sisältö koottiin yhteistyössä opinto-ohjaajan kanssa. Tästä syystä sivun sisältö ja rakenne muuttuivat selvästi alkuperäisestä. Sovelluksessa haluttiin, ottaa huomioon asiakkaan toiveet erityisesti tässä kohden. Olimme kuitenkin määritelleen, että koulut ja heidän viralliset opiskelijoita tukevat tahonsa olivat asiakkaitamme, vaikka opiskelija ovatkin käyttäjiämme.
 
 #### Toteutus
 
 Tämä on yksinkertainen staattinen html-sivu joka oli nopea tehdä. Koodillisesti tässä ei ole mitään monimutkaista, koska html oli ennestään tuttua ja hallussa.
 
+Tässä kuva sivun ensimmäisestä versiosta.
+
 <img src="./Sovelluskuvat/Henkipollon_pesa_alku.PNG" width="700">
+
+Tässä lopullinen versio, joka päivitettiin opintohjaajan kanssa käydyn keskustelun jälkeen.
 
 <img src="./Sovelluskuvat/pesa.PNG" width="700">
 
@@ -164,13 +168,15 @@ Ainoa käytännön syistä lisätty ominaisuus oli, että kun linkkiä painaa, s
 
 Kuten mainittu, ohjelmoinnin osalta tämä ei ollut hirveän monimutkainen sivu. Halusin ottaa tämän mukaan portfoliooni, koska koen oppineeni tätä tehdessä millaista olisi käydä neuvotteluja asiakkaan kanssa niin että asiakas saa sovellukseen sen mitä on tilannut. Keskustelu opinto-ohjaajan kanssa oli hyvä ja siinä oppi heidän ohjaustyöstään paljon sekä sai itse soveltaa kuulemaan omaan sovellukseen. Kun opinto-ohjaaja kertoi esimerkiksi kuinka muissa sovelluksissa on joitain opiskelijoita tukevia elementtejä, ehdotin että noita hyödyllisiä sovelluksia ja sivuja linkataan Henkipöllön pesäsivulle. Ne olivat kuitenkin tukisovelluksia jotka eivät kilpaile meidän sovelluksemme kanssa ja tekisivät Lintukoto-sovelluksestamme entistä käyttäjälähtöisemmän. Pystyisimme paremmin lunastamaan lupauksen siitä, että sovellus välittää myös siitä kuinka hänen käyttäjänsä jaksaa.
 
+Tällainen asiakastyöskentely olisi todella mielenkiintoista myös jatkoa ajatellen.
+
 ***
 
 ### Alkuperäinen sisäänkirjautuminen
 
 <img src="./Sovelluskuvat/Kirjautumis_sivu1.PNG" width="500">
 
-Koska sovellus on jokaisella käyttäjällä henkilökohtainen, tarvitaan mahdollisuus kirjautua sisään. Ennen kuin käyttäjätunnuksia oli ja tietokantaan oli saatu rakenteet kuntoon, piti luoda tällainen väliaikainen sisäänkirjautuminen. 
+Koska sovellus on jokaisella käyttäjällä henkilökohtainen, tarvitaan mahdollisuus kirjautua sisään. Ennen kuin käyttäjätunnuksia oli, olemassa ja saatu laitettua tietokantaan, piti luoda tällainen väliaikainen sisäänkirjautuminen. 
 
 Samalla luotiin sovellukseen auth guard, jotta sovelluksen muille sivuille ei pääse ilman, että on kirjautunut sisään.
 
@@ -281,7 +287,7 @@ export class AuthService {
 }
 ```
 
-Koska ei haluttu, että käyttäjä pääsee näkemään muita sivuja vasta kirjauduttuaan sisään, loin myös sovellukselle perusmuodon auth guardista.
+Koska ei haluttu, että käyttäjä pääsee näkemään muita sivuja vasta kirjauduttuaan sisään, loin myös sovellukselle perusversion auth guardista.
 
 **Auth guard**
 ```javascript
@@ -320,7 +326,7 @@ const routes: Routes = [
 
 Sisäänkirjautumisen luomisessa aloin kunnolla hahmottaa serviceiden roolia Angularissa. Tässä sain tehdä niitä kaksi ja molempien roolien ymmärtäminen avasi kyllä ymmärtämistä serviceihin isommassa mittakaavassa.
 
-Myös auth guardin roolin ymmärtäminen parani tätä tehdessä. Auth guard suojaa tietoja jottei niihin pääsisi muut, kuin sisäänkirjautunut käyttäjä, käsiksi. Tiesin tämän kyllä teorian osalta, mutta en käytännössä. 
+Myös auth guardin roolin ymmärtäminen parani tätä tehdessä. Auth guard suojaa tietoja jottei niihin pääsisi muut kuin sisäänkirjautunut käyttäjä. Tiesin tämän kyllä teorian osalta, mutta en käytännössä. 
 
 Tämäkin oli melko aikaisessa vaiheessa kurssia, joten haasteena oli kyky soveltaa aiemmin opittua tähän sovellukseen. On ihan eri asia tehdä kurssitehtävä jossa on pelkästään sisäänkirjaus ja komponentti. Tässä meillä oli jo useampi komponentti joten kesti hetki hahmottaa mihin väliin jo olemassa olevaa koodia, tämä olisi fiksua laittaa niin etten riko muuta. Onnistuin siinä kuitenkin parin yrityksen jälkeen. Välillä meni vähän ristiin mitä pitää importata minnekäkin ja ottaa käyttöön, mutta kyllä se kokeilemalla alkoi seljetä.
 
@@ -421,7 +427,9 @@ this.userService.login(this.loginData).subscribe(
 #### Haasteet ja oppiminen
 Tämä oli varmasti monimutkaisin kokonaisuus jonka sain tehtyä. Onneksi sen sai tehdä palasissa, että ensin toimiva dialogi-ikkuna ja sitten opeteltiin miten ja mihin kohti koodia se kannattaa laittaa. Huomasin tässä vaiheessa kevättä, että hahmotuskykyni koodin lukemiselle oli kehittynyt. Eli ymmärsin pääpiirteittäin muiden tekemää koodia vaikka en ole ollut sitä itse tekemässä. 
 
-Kokonaisuus vaati lopulta jo ymmärrystä frontin ja backin yhdistämisestä, jonka maailma oli vasta aukenemassa minulle. Sain selvittää kuinka hyödyntää kannassa olevia asetustietoja ja niiden tietojen tarkastuksen jälkeen ikkuna joko avautui tai ei. Tämä oli hyvä ja konkreettinen esimerkki siitä, että vaikka en ole koodannut backiä, sen ymmärtäminen on kriittinen askel kehittyä myös frontti-koodarina. Opin tässä paljon.
+Kokonaisuus vaati lopulta jo ymmärrystä frontin ja backin yhdistämisestä, jonka maailma oli vasta aukenemassa minulle. Sain selvittää kuinka hyödyntää kannassa olevia asetustietoja ja niiden tietojen tarkastuksen jälkeen ikkuna joko avautui tai ei. Tämä oli hyvä ja konkreettinen esimerkki siitä, että vaikka en ole koodannut backiä, sen ymmärtäminen on kriittinen askel kehittyä myös frontti-koodarina. 
+
+Tämä oli myös ensimmäinen kerta kun osasin soveltaa Angularin sivuilta apua omaan työhöni. Tiedän kyllä että esim. materiaaleista on paljon neuvoja ja vinkkejä Angularin omilla sivuilla, mutta en ole osannut aiemmin etsiä ja hyödyntää niitä. Johtunee osin kehittymisestä Angularin ymmärryksessä kun enää ei tarvitse seurata pelkästään videotutoriaaleja, että saisi jotain aikaan.
 
 ## Tuoteomistajana toimiminen
 Lintukoto-sovelluksesta kehiteltiin joulukuussa 2019 alustava konsepti, jossa toimin pääideoijana ja suunnittelijana. Tästä syystä minulle oli luonteva rooli ottaa tuoteomistajan eli product ownerin (PO jatkossa) rooli. Tämä rooli oli sivutoimeni kevään 2020 aikana.
