@@ -1,26 +1,3 @@
-## Sisällysluettelo
-  - [Sisällysluettelo](#sis%c3%a4llysluettelo)
-  - [Johdanto](#Johdanto)
-    - [Asetetut oppimistavoitteet](#Asetetut-oppimistavoitteet)
-    - [Toteutunut oppiminen](#Toteutunut-oppiminen)
-  - [Tekniset toteutukset](#Tekniset-toteutukset)
-    - [Asetukset sivu](#Asetukset-sivu)
-      - [Toteutus](#Toteutus)
-      - [Haasteet ja oppiminen](#Haasteet-ja-oppiminen)
-    - [Henkipöllön pesäsivu](#Henkipöllön-pesäsivu)
-      - [Toteutus](#Toteutus)
-      - [Haasteet ja oppiminen](#Haasteet-ja-oppiminen)
-    - [Alkuperäinen sisäänkirjautuminen](#Alkuperäinen-sisäänkirjautuminen)
-      - [Toteutus](#Toteutus)
-      - [Haasteet ja oppiminen](#Haasteet-ja-oppiminen)
-    - [Henkipöllön kommentointi-ikkuna](#Henkipöllön-kommentointi-ikkuna)
-      - [Toteutus](#Toteutus)
-      - [Haasteet ja oppiminen](#Haasteet-ja-oppiminen)
-  - [Tuoteomistajana toimiminen](#Tuoteomistajana-toimiminen)
-  - [Muut aikaansaannokset](#Muut-aikaansaannokset)
-  - [Itsearviointi](#Itsearviointi)
-
-
 ## Johdanto
 
 Tämä dokumentti pitää sisällään minun osuuteni Lintukoto-sovelluksen kehittämisestä kevään 2020 Ticorporate Demo Lab-opintojaksolla. 
