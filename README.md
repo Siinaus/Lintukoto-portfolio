@@ -58,32 +58,104 @@ Roolini sovelluksen teknisessä toteutuksessa oli front-endin kehittäjänä. Si
 
 ### Asetukset sivu
 
-TÄHÄN TULEE VIDEO TAI KUVA
-
 Nimensä mukaan, asetukset sivun tarkoitus on antaa käyttäjälle mahdollisuus lisätä omia henkilökohtaisia toiveita sovelluksen osalta. Kaikille asetukset sivun kohdille oli mietitty vaikutukset sovelluksessa, mutta kaikkia ei ehditty toteuttaa kevään aikana. Asetuksien lomakkeessa on kuitenkin kohdat valmiina, vaikka kaikkien osien takana ei olekaan toiminnallisuuksia.
 
 #### Toteutus
 
-Kokosin alkuun asetukset sivulle vain 
+Kokosin alkuun asetukset sivulle lomakkeen, jossa kysyttiin vain opiskelijan perustietoja. Näin saatiin asetukset sivu sovellukseen ja seuraavaksi suunniteltiin paremmin mitä tietoja asetukset sivulle oikeasti halutaan. Ensimmäisessä versiossa ei ollut tiedon validointia eli syötetty tieto sai olla mitä vain. Myöskään muotoiluita ei lisätty tässä vaiheessa.
+
 Asetukset sivun ensimmäinen versio:
 
 <img src="./Sovelluskuvat/Eka_asetuksetsivu.PNG" width="500">
+
+Toiseen versioon oli saatu jo koko asetukset-lomake kasaan ja siihen oli lisätty yksinkertaiset muotoilut. Tässä vaiheessa asetuksien tiedot eivät tallentuneet vielä mihinkään, mutta Henri lisäsi tämän jälkeen myös asetuksien tiedot backin puolelle.
 
 Toinen versio:
 
 <img src="./Sovelluskuvat/Asetuksetsivun_kehitys.PNG" width="500">
 
+Viimeisessä vaiheessa huomattiin, että kaikkien kohtien sanamuotoilut eivät sovi siihen mitä sovelluksessa sillä hetkellä tapahtuu, joten lomakkeen tarkoitusta hieman päivitettiin. Nyt asetuksista näki heti konkreettisesti mihin se vaikuttaa sovelluksessa. Tässä vaiheessa lisättiin myös syötetyn tiedon validointeja ja varmistettiin mm. että opintojen aloituspäivä ei voi olla tulevaisuudessa.
+
 Kolmas ja viimeinen versio:
 
 <img src="./Sovelluskuvat/Asetuksetsivu.PNG" width="500">
 
-```javascript
-TÄHÄN TULEE KOODIA
+Tässä vielä esimerkki siitä miltä asetuslomakkeen input-kohdat näyttävät aloituspäivämäärän, ryhmätunnuksen ja opintopistemäärän suhteen.
+
+```html
+<!--Max-arvo on tällä puolella 2020-05-05 
+          mutta ts-tiedoston puolelta siihen syötetään aina current date, joten tästä ei tarvitse välittää-->
+        <input
+          type="date"
+          id="datefield"
+          min="1990-01-01"
+          max="2020-05-05"
+          [(ngModel)]="asetuksetLadattu.asetukset.aloituspaiva"
+          name="aloituspaiva"
+          class="form-control"
+          [value]="asetuksetLadattu.asetukset.aloituspaiva"
+        />
+      </div>
+
+      <div class="form-group">
+        <label class="bold" for="ryhmatunnus">Ryhmätunnus</label><br />
+        <input
+          type="text"
+          [(ngModel)]="asetuksetLadattu.asetukset.ryhmatunnus"
+          class="form-control"
+          name="ryhmatunnus"
+          [placeholder]="asetuksetLadattu.asetukset.ryhmatunnus"
+          [value]="asetuksetLadattu.asetukset.ryhmatunnus"
+        />
+      </div>
+
+      <div class="form-group">
+        <label class="bold" for="kokonaisOp"
+          >Koulutusohjelman opintopisteiden kokonaismäärä</label
+        ><br />
+        <input
+          type="number"
+          min="0"
+          max="800"
+          [(ngModel)]="asetuksetLadattu.asetukset.kokonaisOp"
+          class="form-control"
+          name="kokonaisOp"
+          [placeholder]="asetuksetLadattu.asetukset.kokonaisOp"
+          [value]="asetuksetLadattu.asetukset.kokonaisOp"
+        />
+      </div>
 ```
 
-#### Haasteet
+Ja tässä koodi, joka syötetään aloituspäivämäärän max-kohtaan, jotta aloituspäivämäärä ei voi olla tulevaisuudessa.
 
-#### Oppiminen
+```javascript
+/* Haluttiin varmistaa että opintojen aloituspäivämäärä ei voi olla tulevaisuudessa. 
+    Eli se voi olla olla enintään sen hetkinen kuluva päivä*/
+
+    // Kokoaan tämän hetkisen päivän tiedot erikseen
+    let today: any = new Date();
+    let dd: any = today.getDate();
+    // Tammikuu on 0, joten fiksun tulostuksen takia +1
+    let mm: any = today.getMonth() + 1;
+    let yyyy: any = today.getFullYear();
+    if (dd < 10) {
+      dd = "0" + dd;
+    }
+    if (mm < 10) {
+      mm = "0" + mm;
+    }
+
+    // Koottu päivämäärä viedään lomakkeen max-kohtaan
+    today = yyyy + "-" + mm + "-" + dd;
+    document.getElementById("datefield").setAttribute("max", today);
+  }
+  ```
+
+#### Haasteet ja oppiminen
+
+Asetukset sivu oli ensimmäinen koodaamani asia tässä projektissa, joten alkuun se oli hyvä herättely koodin tekemiseen. Oli kuitenkin hyvin opettavaista kun sai myöhemminkin jatkaa asetussivun kehittämistä ja huomata, että kun taidot kehittyy niin sinne osaa lisätä jo tuollaisia "opintojen aloituspäivämäärä ei saa olla tulevaisuudessa"-korjailuja. Se oli myös ensimmäisi bugi-korjauksia joita sain tehtyä ja olin siitä ylpeä. 
+
+Ihan täysin datan validointia ei saanut kuntoon. Vaikka opintopistemäärällä oli min ja max arvot, ne eivät estäneet käyttäjää kirjoittamasta liian isoja tai pieniä arvoja kenttään. Syötekentän sivussa olevista nuolista ei saanut klikkailtua arvoa liian isoksi tai pieneksi, mutta koska arvon voi myös kirjoittaa väärin, korjaus ei ole hirveän hyvä. Tällaisiin olisin halunnut vielä paneutua, mutta aikaa ei ollut lopulta siihen perehtymiseen.
 
 ***
 
