@@ -53,6 +53,7 @@ Kun teki koodin kanssa paljon töitä viikottain, tarkasti muiden aikaansaannoks
 
 Backend oli minulle pitkään iso mörkö, joten vaikka sovelluksemme backend ei ollutkaan minun vastuullani, opiskelin sitä myös kevään aikana. Halusin etenkin ymmärtää frontin ja backin liitoskohtia paremmin. Pikkuhiljaa tämäkin alkoi seljetä minulle. Ei ehkä ihan niin selkeäksi mitä olin odottanut, mutta sen verta tarpeeksi, että osasin hyödyntää sovelluksemme tietokannasta tietoa frontin puolelle. Ymmärrän siis teoriassa mitä palvelinpuoli ja tietokannat vaativat, vaikka en niitä osaisikaan luoda tällaisen sovelluksen vaatimassa mittakaavassa.
 
+
 ## Tekniset toteutukset
 Roolini sovelluksen teknisessä toteutuksessa oli front-endin kehittäjänä. Siksi myös konkreettiset tuotokset ovat kaikki käyttöliittymän kehittämisestä.
 
@@ -161,16 +162,30 @@ Ihan täysin datan validointia ei saanut kuntoon. Vaikka opintopistemäärällä
 
 ### Henkipöllön pesäsivu
 
-Henkipöllön pesäsivulle on koottu opiskelijalle hyödyllisiä linkkejä. Tämä on yksinkertainen staattinen sivu joka oli nopea tehdä. Sivun sisältö koottiin yhteistyöhön opinto-ohjaajan kanssa.
+Henkipöllön pesäsivulle on koottu opiskelijalle hyödyllisiä linkkejä. Sivun sisältö koottiin yhteistyöhön opinto-ohjaajan kanssa. Tästä syystä sivun sisältö ja rakenne muuttuivat selvästi alkuperäisestä. Sovelluksessa haluttiin, ottaa huomioon asiakkaan toiveet erityisesti tässä kohden. Olimme kuitenkin määritelleen, että koulut ja heidän viralliset opiskelijoita tukevat tahonsa olivat asiakkaitamme, vaikka opiskelija ovatkin käyttäjiämme.
 
 #### Toteutus
 
-```javascript
-TÄHÄN TULEE KOODIA
+Tämä on yksinkertainen staattinen html-sivu joka oli nopea tehdä. Koodillisesti tässä ei ole mitään monimutkaista, koska html oli ennestään tuttua ja hallussa.
+
+<img src="./Sovelluskuvat/Henkipollon_pesa_alku.PNG" width="500">
+
+<img src="./Sovelluskuvat/Henkipollon_pesa.PNG" width="500">
+
+Ainoa käytännön syistä lisätty ominaisuus oli, että kun linkkiä painaa, sen takaa avautuva sivu avautuu aina omaan välilehteensä. Alla on esimerkki yhdestä linkkilistan osasta. 
+```html
+<li> Kaikki JAMKin tarjoama tuki opiskeluun löytyy täältä: 
+            <a
+              href="https://opinto-oppaat.jamk.fi/fi/opinto-opas-amk/opintojen-tueksi/opintojen-ohjaus/"
+              target="_blank"
+              >JAMKin  opintojen ohjaus- ja tukipalvelut</a
+            >
+          </li>
 ```
 
 #### Haasteet ja oppiminen
 
+Kuten mainittu, ohjelmoinnin osalta tämä ei ollut hirveän monimutkainen sivu. Halusin ottaa tämän mukaan portfoliooni, koska koen oppineeni tätä tehdessä millaista olisi käydä neuvotteluja asiakkaan kanssa niin että asiakas saa sovellukseen sen mitä on tilannut. Keskustelu opinto-ohjaajan kanssa oli hyvä ja siinä oppi heidän ohjaustyöstään paljon sekä sai itse soveltaa kuulemaan omaan sovellukseen. Kun opinto-ohjaaja kertoi esimerkiksi kuinka muissa sovelluksissa on joitain opiskelijoita tukevia elementtejä, ehdotin että noita hyödyllisiä sovelluksia ja sivuja linkataan Henkipöllön pesäsivulle. Ne olivat kuitenkin tukisovelluksia jotka eivät kilpaile meidän sovelluksemme kanssa ja tekisivät Lintukoto-sovelluksestamme entistä käyttäjälähtöisemmän. Pystyisimme paremmin lunastamaan lupauksen siitä, että sovellus välittää myös siitä kuinka hänen käyttäjänsä jaksaa.
 
 ***
 
@@ -340,7 +355,7 @@ Henkipöllön kommentointi-ikkuna ilmestyy kun käyttäjä kirjautuu sisälle ja
 Perusteet tälle löytyi [Angular Material-sivulta](https://material.angular.io/components/dialog/overview).
 Henkipöllön kommentointi-ikkunalle on luotu oma componentti, jossa Henkipöllön mahdollisista kommenteista arvotaan jokin lause avautuvaan dialogi-ikkunaan.
 
-***dialog.ts***
+**dialog.ts**
 ```javascript
 // Taulukko, jossa on kaikki tervehdysvaihtoehdot sisäänkirjautuessa
   tervehdykset = [
