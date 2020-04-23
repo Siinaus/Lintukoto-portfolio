@@ -168,9 +168,9 @@ Henkipöllön pesäsivulle on koottu opiskelijalle hyödyllisiä linkkejä. Sivu
 
 Tämä on yksinkertainen staattinen html-sivu joka oli nopea tehdä. Koodillisesti tässä ei ole mitään monimutkaista, koska html oli ennestään tuttua ja hallussa.
 
-<img src="./Sovelluskuvat/Henkipollon_pesa_alku.PNG" width="500">
+<img src="./Sovelluskuvat/Henkipollon_pesa_alku.PNG" width="700">
 
-<img src="./Sovelluskuvat/pesa.PNG" width="500">
+<img src="./Sovelluskuvat/pesa.PNG" width="700">
 
 Ainoa käytännön syistä lisätty ominaisuus oli, että kun linkkiä painaa, sen takaa avautuva sivu avautuu aina omaan välilehteensä. Alla on esimerkki yhdestä linkkilistan osasta. 
 ```html
