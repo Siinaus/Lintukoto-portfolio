@@ -432,11 +432,11 @@ Kokonaisuus vaati lopulta jo ymmärrystä frontin ja backin yhdistämisestä, jo
 Tämä oli myös ensimmäinen kerta kun osasin soveltaa Angularin sivuilta apua omaan työhöni. Tiedän kyllä että esim. materiaaleista on paljon neuvoja ja vinkkejä Angularin omilla sivuilla, mutta en ole osannut aiemmin etsiä ja hyödyntää niitä. Johtunee osin kehittymisestä Angularin ymmärryksessä kun enää ei tarvitse seurata pelkästään videotutoriaaleja, että saisi jotain aikaan.
 
 ## Tuoteomistajana toimiminen
-Lintukoto-sovelluksesta kehiteltiin joulukuussa 2019 alustava konsepti, jossa toimin pääideoijana ja suunnittelijana. Tästä syystä minulle oli luonteva rooli ottaa tuoteomistajan eli product ownerin (PO jatkossa) rooli. Tämä rooli oli sivutoimeni kevään 2020 aikana.
+Lintukoto-sovelluksesta kehiteltiin joulukuussa 2019 alustava konsepti, jossa toimin pääideoijana ja suunnittelijana. Tästä syystä minulle oli luonteva rooli ottaa tuoteomistajan eli product ownerin rooli (myöhemmin PO). Tämä rooli oli sivutoimeni kevään 2020 aikana.
 
 PO:na otin vastuun ZehHub ja GitHub työkalumme käyttöönotosta ja ylläpidosta. Niiden osalta työnkuvaani kuului:
 * ZenHubin ja GitHubin rakenteen hahmottelu projektia varten
-  * Epicien ja UserStrorien kirjoittamisen päävastuu 
+  * Epicien ja User Storien kirjoittamisen päävastuu 
   * Sovelluksen eri haarojen (branch) luonti ja käyttöönoton varmistaminen
 * Vastuu siitä että GitHubia ja ZenHubia käytetän oikein ja tehokkaasti
   * Järjestää tarvittaessa koulutuksia ohjaajilta koko tiimille
@@ -444,6 +444,10 @@ PO:na otin vastuun ZehHub ja GitHub työkalumme käyttöönotosta ja ylläpidost
 * Priorisoida product backlog niin, että ylimpänä listassa on aina tärkeimmät työt sovelluksen kehittymisen kannalta
 * Bugikorjauskäytänteiden tuominen ZenHubiin, jotta kuka tahansa voi tehdä bugikorjailuja ja nähdä mitä bugeja muu tiimi työstää
 * Pull requestien tarkastaminen ja hyväksyminen yhdessä päätestaajan kanssa
+
+Työkaluna ZenHub oli aivan uusi, mutta olen ennen käyttänyt työssäni Trelloa, joten ymmärsin sen takia ZenHubin idean nopeasti. Haasteena oli tietysti tarve jolla ZenHubia käytettiin. Lähtökohtaisesti ymmärrykseni User Storeista (myöhemmin US) oli virheellinen, joten tammikuu meni pitkälti opetelessa kuinka niistä luodaan informatiivisiä ja tiiviistä kokonaisuuksia. Onneksi tiimi oli ymmärtäväinen tämän suhteen ja kun oikea tapa löytyi, he sopeutuivat hyvin muutokseen.
+
+PO:na toimiminen vei eniten aikaa juuri kurssin alussa. Työtapojen oppiminen ja sen jälkeen niiden edelleen opettaminen tiimille, vei aluksi aikaa. Samoin tuntui että ensimmäisenä kuukautena vain kirjoitin US:ä päivästä toiseen. Ohjaajilta sai kyllä hyvin palautetta siitä kuinka hyvin tässä kehittyi. Kun US:ät olivat kunnossa, pääsi 
 
 Muut PO-toimet joita kevään aikana hoidin:
 * Projektisuunnitelman ja Esitutkimuksen visio-osuuksien kirjoittaminen ja tarvittaessa päivittäminen
