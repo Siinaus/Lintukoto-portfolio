@@ -518,7 +518,7 @@ Uskon, että minulla on myös monia ominaisuuksia joista on hyötyä tulevaisuud
 * Tunnen myös rajani, koska olen jo kokenut yhden burnoutin elämäni aikana, eli en polta jatkossa kynttilääni molemmista päistä 
 * Hyvä tiimipelaaja
 
-### Missä onnistuin?
+#### Missä onnistuin?
 
 Olen todella ylpeä kaikesta mitä ehdin saada aikaan. Teknisessä mielessä kehityksen näkee jo siitä että siirryin tekemään pelkistä html-sivuista jotain monimutkaisempaa, joka vaatii myös typescript-osaamista ja Angularin rakenteen hahmottamista. Se otti aikansa, mutta tulos on sellainen kuin halusin sen olevan.
 
@@ -528,7 +528,7 @@ Muutenkin opin lukemaan koodia ja hahmottamaan sen merkityksen paremmin. Tarkist
 
 Aiemmin mainituista syistä, olen myös tyytyväinen suoritukseeni PO:na sekä edustustyöhöni sovelluksen puolesta. Oli se sitten sovelluksen esittelyä demoissa tai avajaispäivänä, tai palaverin pitoa opinto-ohjaajan kanssa. Koen, että onnistuin kertomaan sovelluksesta hyvin. PO:na huomasin että tiimi sisäisti tuotteen vision hyvin ja teki pääsääntöisesti oikeita, priorisoituja asioita tuotteen kehittmisen eteen.
 
-### Missä pitää vielä kehittyä?
+#### Missä pitää vielä kehittyä?
 
 Ohjelmointitaidot kehittyvät vain ohjelmoimalla. Minulla on hyvin lyhyt kokemus ohjelmoinnista, koska olen oppinut sen vasta tässä koulutuksessa. Siksi tiedän, että saan tehdä vielä paljon töitä ja monta riviä koodia, että kehityn sille tasolle mistä olisi työelämässä hyötyä. Judun turvautumaan vielä paljon tutoriaaleihin ja muihin apumateriaaleihin, mutta oli myös ilo huomata että kevään mittaan käytetyt materiaalit muuttuivat myös hieman ammatillisemmiksi.
 
