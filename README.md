@@ -489,7 +489,7 @@ Projektimme joutui turvautumaan suunnitelma B:hen kun JAMKilta ilmoitettiin, ett
 
 ## Itsearviointi
 
-|   | Ma       | Ti        | Ke | To       | Pe        |
-|---|----------|-----------|----|----------|-----------|
-| 1 | Planning | PO-miitti |    |          |           |
-| 2 |          | PO-miitti |    | Grooming |  Grooming |
+|   |        Ma        |            Ti        | Ke |       To       |       Pe        |
+|---|------------------|----------------------|----|----------------|-----------------|
+| 1 | Planning (1-2 h) | PO-miitti (1 -1,5 h) |    |                |                 |
+| 2 |                  | PO-miitti (1- 1,5 h) |    | Grooming (4 h) |  Grooming (4 h) |
