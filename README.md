@@ -507,9 +507,13 @@ Myös muut työt saattoivat viedä sprintistä pitkät pätkät. Esimerkiksi esi
 
 #### Mihin tähtään?
 
-Uratoiveena minulla on jatkaa teknisellä puolella. Haluan oppia hyväksi perusohjelmoijaksi. Koska oppini backendistä jäivät hieman hatariksi, luulen, että on hyvä ottaa haltuun ensin frontend ja kehittää backend-taitojaan pikkuhiljaa siinä sivussa. PO:na toimiminen antoi minulle myös kipinän siihen, että voisin pärjätä tuoteomistajan kaltaisissa rooleissa. Minulla on aiempaa työhistoriaa esimiehenä, joten niiden taitojen yhdistäminen ketterien menetelmien maailmaan inspiroi minua myös haaveilemaan roolista tiiminvetäjänä joku päivä.
+Uratoiveena minulla on jatkaa teknisellä puolella. **Haluan oppia hyväksi perusohjelmoijaksi.** Koska oppini backendistä jäivät hieman hatariksi, luulen, että on hyvä ottaa haltuun ensin frontend ja kehittää backend-taitojaan pikkuhiljaa siinä sivussa. PO:na toimiminen antoi minulle myös kipinän siihen, että voisin pärjätä tuoteomistajan kaltaisissa rooleissa. Minulla on aiempaa työhistoriaa esimiehenä, joten niiden taitojen yhdistäminen ketterien menetelmien maailmaan inspiroi minua myös haaveilemaan roolista tiiminvetäjänä joku päivä.
 
-Ensimmäiset askeleet ohjelmoinnin urapolusta tulen ottamaan tänä kesänä, kun sain maaliskuussa tietää saavani kesätöitä Angular-pohjaisen käyttöliittymän junnukehittäjänä. Työhaastatteluissa arvostettiin paljon TC:n oppeja vaikka kurssi oli vasta puolivälissä siinä vaiheessa. Se että olin osana tekemässä Angular-sovellusta kuulosti työnantajalle todella hyvältä. Lisäksi se, että käytämme kouluprojektin toteuttamiseen ketteriä menetelmiä, oli myös iso bonus. Täällä oppimani taidot Angularin ja scrumin parissa auttavat minua urahaaveissani.
+Ensimmäiset askeleet ohjelmoinnin urapolusta tulen ottamaan tänä kesänä, kun sain maaliskuussa tietää saavani kesätöitä Angular-pohjaisen käyttöliittymän junnukehittäjänä. 
+
+>**Työhaastatteluissa arvostettiin paljon TC:n oppeja vaikka kurssi oli vasta puolivälissä siinä vaiheessa. Se että olin osana tekemässä Angular-sovellusta kuulosti työnantajalle todella hyvältä. Lisäksi se, että käytämme kouluprojektin toteuttamiseen ketteriä menetelmiä, oli myös iso bonus.**
+
+Täällä oppimani taidot Angularin ja scrumin parissa auttavat minua urahaaveissani.
 
 Uskon, että minulla on myös monia ominaisuuksia joista on hyötyä tulevaisuudessa: 
 * Rohkeus kohdata ihmisiä ja esiintyä 
@@ -520,18 +524,18 @@ Uskon, että minulla on myös monia ominaisuuksia joista on hyötyä tulevaisuud
 
 #### Missä onnistuin?
 
-Olen todella ylpeä kaikesta mitä ehdin saada aikaan. Teknisessä mielessä kehityksen näkee jo siitä että siirryin tekemään pelkistä html-sivuista jotain monimutkaisempaa, joka vaatii myös typescript-osaamista ja Angularin rakenteen hahmottamista. Se otti aikansa, mutta tulos on sellainen kuin halusin sen olevan.
+Olen todella ylpeä kaikesta mitä ehdin saada aikaan. Teknisessä mielessä kehityksen näkee jo siitä että **siirryin tekemään pelkistä html-sivuista jotain monimutkaisempaa, joka vaatii myös typescript-osaamista ja Angularin rakenteen hahmottamista**. Se otti aikansa, mutta tulos on sellainen kuin halusin sen olevan.
 
-Opiskelin myös 3. sprintissä backendin perusteet ja sen jälkeen ymmärsin paremmin sovelluksemme palvelinpuolta. En olisi osannut tehdä sitä itse, mutta minulle jo ymmärryskin oli voitto. Sen pohjalta sain myös tehtyä web-sovelluskehityksen tehtävät loppuun ja läpäistyä sen kurssin.
+Opiskelin myös 3. sprintissä backendin perusteet ja sen jälkeen **ymmärsin paremmin sovelluksemme palvelinpuolta**. En olisi osannut tehdä sitä itse, mutta minulle jo ymmärryskin oli voitto. Sen pohjalta sain myös tehtyä web-sovelluskehityksen tehtävät loppuun ja läpäistyä sen kurssin.
 
-Muutenkin opin lukemaan koodia ja hahmottamaan sen merkityksen paremmin. Tarkistin monia pull requesteja ja niiden kautta opin myös muiden tekemästä koodista paljon. Opiskelin sovelluksemme koodia usein, jotta ymmärtäisin muiden koodaamien palasten logiikan ja se avarsi ymmärrystäni hyvin.
+Muutenkin **opin lukemaan koodia ja hahmottamaan sen merkityksen** paremmin. Tarkistin monia pull requesteja ja niiden kautta opin myös muiden tekemästä koodista paljon. Opiskelin sovelluksemme koodia usein, jotta ymmärtäisin muiden koodaamien palasten logiikan ja se avarsi ymmärrystäni hyvin.
 
-Aiemmin mainituista syistä, olen myös tyytyväinen suoritukseeni PO:na sekä edustustyöhöni sovelluksen puolesta. Oli se sitten sovelluksen esittelyä demoissa tai avajaispäivänä, tai palaverin pitoa opinto-ohjaajan kanssa. Koen, että onnistuin kertomaan sovelluksesta hyvin. PO:na huomasin että tiimi sisäisti tuotteen vision hyvin ja teki pääsääntöisesti oikeita, priorisoituja asioita tuotteen kehittmisen eteen.
+Aiemmin mainituista syistä, olen myös **tyytyväinen suoritukseeni PO:na sekä edustustyöhöni** sovelluksen puolesta. Oli se sitten sovelluksen esittelyä demoissa tai avajaispäivänä, tai palaverin pitoa opinto-ohjaajan kanssa. Koen, että onnistuin kertomaan sovelluksesta hyvin. PO:na huomasin että tiimi sisäisti tuotteen vision hyvin ja teki pääsääntöisesti oikeita, priorisoituja asioita tuotteen kehittmisen eteen.
 
 #### Missä pitää vielä kehittyä?
 
-Ohjelmointitaidot kehittyvät vain ohjelmoimalla. Minulla on hyvin lyhyt kokemus ohjelmoinnista, koska olen oppinut sen vasta tässä koulutuksessa. Siksi tiedän, että saan tehdä vielä paljon töitä ja monta riviä koodia, että kehityn sille tasolle mistä olisi työelämässä hyötyä. Judun turvautumaan vielä paljon tutoriaaleihin ja muihin apumateriaaleihin, mutta oli myös ilo huomata että kevään mittaan käytetyt materiaalit muuttuivat myös hieman ammatillisemmiksi.
+Ohjelmointitaidot kehittyvät vain ohjelmoimalla. Minulla on hyvin lyhyt kokemus ohjelmoinnista, koska olen oppinut sen vasta tässä koulutuksessa. Siksi tiedän, että **saan tehdä vielä paljon töitä ja monta riviä koodia, että kehityn sille tasolle mistä olisi työelämässä hyötyä**. Judun turvautumaan vielä paljon tutoriaaleihin ja muihin apumateriaaleihin, mutta oli myös ilo huomata että kevään mittaan käytetyt materiaalit muuttuivat myös hieman ammatillisemmiksi.
 
-Kun corona iski ja siirryimme etätyöhön, huomasin kuinka puutteelliset omat etätyötaidot olivat. Totta kai siinä vaikutti alkuhämmennys, omien vanhempien sairastuminen ym. Mutta siinä opin itsesäni, että tässä vaiheessa kun työskentely on 80 % pelkkää uuden oppimista, tavalliset etätyöohjeet eivät olleet hirveän sovellettavissa minulle. Tarvitsen tiimin ja sparrauksen mahdollisuuden. Kynnys ottaa yhteyttä keneenkään maaliskuun lopulla oli suuri. Tilanteeseen tottui lopulta, mutta huhtikuun tulosten osalta näkee, että etätyöskentely ei ole niin tehokasta kuin työskentely matarankadulla.
+Kun corona iski ja siirryimme etätyöhön, huomasin kuinka **puutteelliset omat etätyötaidot olivat**. Totta kai siinä vaikutti alkuhämmennys, omien vanhempien sairastuminen ym. Mutta siinä opin itsesäni, että tässä vaiheessa kun työskentely on 80 % pelkkää uuden oppimista, tavalliset etätyöohjeet eivät olleet hirveän sovellettavissa minulle. Tarvitsen tiimin ja sparrauksen mahdollisuuden. Kynnys ottaa yhteyttä keneenkään maaliskuun lopulla oli suuri. Tilanteeseen tottui lopulta, mutta huhtikuun tulosten osalta näkee, että etätyöskentely ei ole niin tehokasta kuin työskentely matarankadulla.
 
-Tämä kehityskohde poistuu oikeastaan sillä, että saa vain kehittyä ohjelmoinnissa, mutta olen usein hieman kärsimätön oppija. Halu oppia ja kehittyä johtaa siihen, että turhautuu välillä siihen oppimiseen kuluvaan aikaan. Pitäisi myös kehitellä hyviä oppimisrutiineja, jotka tukevat mielenkiinnon ylläpitämistä ja antaisivat edes pieniä onnistumisen tunteita ennen kuin tulee se oivallus ja onnistuminen.
+Tämä kehityskohde poistuu oikeastaan sillä, että saa vain kehittyä ohjelmoinnissa, mutta **olen usein hieman kärsimätön oppija**. Halu oppia ja kehittyä johtaa siihen, että turhautuu välillä siihen oppimiseen kuluvaan aikaan. **Pitäisi myös kehitellä hyviä oppimisrutiineja**, jotka tukevat mielenkiinnon ylläpitämistä ja antaisivat edes pieniä onnistumisen tunteita ennen kuin tulee se oivallus ja onnistuminen.
