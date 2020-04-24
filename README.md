@@ -445,28 +445,46 @@ PO:na otin vastuun ZehHub ja GitHub työkalumme käyttöönotosta ja ylläpidost
 * Bugikorjauskäytänteiden tuominen ZenHubiin, jotta kuka tahansa voi tehdä bugikorjailuja ja nähdä mitä bugeja muu tiimi työstää
 * Pull requestien tarkastaminen ja hyväksyminen yhdessä päätestaajan kanssa
 
-Työkaluna ZenHub oli aivan uusi, mutta olen ennen käyttänyt työssäni Trelloa, joten ymmärsin sen takia ZenHubin idean nopeasti. Haasteena oli tietysti tarve jolla ZenHubia käytettiin. Lähtökohtaisesti ymmärrykseni User Storeista (myöhemmin US) oli virheellinen, joten tammikuu meni pitkälti opetelessa kuinka niistä luodaan informatiivisiä ja tiiviistä kokonaisuuksia. Onneksi tiimi oli ymmärtäväinen tämän suhteen ja kun oikea tapa löytyi, he sopeutuivat hyvin muutokseen.
+<img src="./Sovelluskuvat/Zen3.PNG" width="600">
 
-PO:na toimiminen vei eniten aikaa juuri kurssin alussa. Työtapojen oppiminen ja sen jälkeen niiden edelleen opettaminen tiimille, vei aluksi aikaa. Samoin tuntui että ensimmäisenä kuukautena vain kirjoitin US:ä päivästä toiseen. Ohjaajilta sai kyllä hyvin palautetta siitä kuinka hyvin tässä kehittyi. Kun US:ät olivat kunnossa, pääsi 
+Työkaluna ZenHub oli aivan uusi, mutta olen ennen käyttänyt työssäni Trelloa, joten ymmärsin sen takia ZenHubin idean nopeasti. Haasteena oli tietysti tarve johon ZenHubia käytettiin. Lähtökohtaisesti ymmärrykseni User Storeista (myöhemmin US) oli virheellinen, joten tammikuu meni pitkälti opetelessa kuinka niistä luodaan informatiivisiä ja tiiviistä kokonaisuuksia. Onneksi tiimi oli ymmärtäväinen tämän suhteen ja kun oikea tapa löytyi, he sopeutuivat hyvin muutokseen.
+
+PO:na toimiminen vei eniten aikaa juuri kurssin alussa. Työtapojen oppiminen ja sen jälkeen niiden edelleen opettaminen tiimille, vei aluksi aikaa. Samoin tuntui, että ensimmäisenä kuukautena vain kirjoitin US:ä päivästä toiseen. Ohjaajilta sai kyllä hyvin palautetta siitä kuinka hyvin tässä kehittyi. Kun US:ät olivat kunnossa, niiden priorisoiminenkin kävi helpommin. Varasin aina parin työpäivän verran aikaa per sprintti siihen, että päivitän ja täydennän ZenHubia, priorisoin sisällön ja huolehdin pull requesteista. Tämä taustatyö nopeutti mm. tiimimme planningejä.
+
+Kurssin alussa järjestin myös apua ja koulutusta tiimille uusien työkalujen kanssa. Kaikki osasivat käyttää GitHubia mutta jokaisella oli siihen hieman eri logiikka. Kaikille ei ollut myöskään selkeää kuinka sitä käytetään tiimityössä. Git-koulutuksen jälkeen, pidimme yhdessä scrum masterin kanssa huolta, että tiimimme kirjoittaa yhteiset koodauskäytänteet, sopii kuinka haarat/branchit nimetään ja millä logiikalla tehdään pull requesteja. Tämä sujuvoitti työtämme loppukurssin osalta.
+
+Myöhemmin kurssin aikana, sovelluksemme testaus oli kehittynyt hyvin ja bugeja alkoi löytyä. Jotta kaikki olisivat pysyneet kartalla siitä mitä bugeja meillä oli ja mitä voisi työstää, päätimme testaajan kanssa siirtää bugilistan ZenHubiin. Tällöin kuka vaan ohjelmoijista voi ottaa bugikorjailun työn alle ja muut näkevät sieltä mitä hän tekee ja miten korjailut etenee. Bugikorjailut olivat myös sellaista työtä, jota voi tehdä sprinttien loppupuolella jos sprint backlogissa ei ole enää itselle sopivaa tehtävää jäljellä.
 
 Muut PO-toimet joita kevään aikana hoidin:
 * Projektisuunnitelman ja Esitutkimuksen visio-osuuksien kirjoittaminen ja tarvittaessa päivittäminen
 * Alussa sovelluksen sisällön ja ulkoasukuvauksen kouluttaminen tiimille
 * Bugipalaveri testaajien kanssa bugien priorisoinnista ja määristä
-* Esitysmateriaalien kasaaminen ja esittäminen (demot ja liiketoimintasuunnitelma)
 * Keskustelut opinto-ohjaajan kanssa, jotta sovellus kehittyisi myös opiskelija tuen kannalta oikeaan suuntaan
-
-
-## Muut aikaansaannokset
-
 * [Sovelluksen visuaalisen ulkonäön suunnittelu ja päivittäminen](https://jamkstudent-my.sharepoint.com/:w:/g/personal/m2936_student_jamk_fi/EXnRKCvpEd1OtMOr3yjOFBYBf720on2HdmNHYsQrv0cayg?e=MQmYyj)
  * Järjestää palautekeskusteluja ja äänestyksiä ulkoasusta tiimin ulkopuolisten henkilöiden kanssa
+
+Muita rooleja jotka hoidin PO-roolini nimissä oli kaikki visioon liittyvät tehtävät. Tähän lukeutui mm. sovelluksemme idean, sisällön ja visualisuuden kouluttaminen tammikuussa uusille tiiminjäsenillemme. Samoin kun sovellukseen suunniteltiin jokin muutos esim. ohjelmoijien kanssa, koulutin sen eteenpäin koko tiimille. Ennen siirtymistä etätyöhön, pidin sovelluksen rakennekarttaa piirrettynä ja päivitettynä tiimimme toimiston seinällä. 
+
+<img src="./Sovelluskuvat/taulu.PNG" width="500">
+
+Myös sovelluksen ulkoasun ja ulkoasumuutosten hoitaminen oli hommani. Jo ensimmäisen värisuunnitelman kanssa kutsuin tiimin ulkopuolisia henkilöitä kertomaan mielipiteensä silloin neljästä ehdolla olevista värimaailmoista. Värit oli silloin valittu alkuperäisen vision mukaisesti maitokahvi-sävyn mukaan. Saimme kuitenkin ensimmäisen demoesityksen jäljiltä palautetta, että sovelluksen värimaailma ei ole ihan mieleen. Siksi järjestin uudestaan selvityksen sopivasta värimaailmasta. Tällä kertaa kokeilimme hyvin erilaisia värejä ja ensin karsimme niistä tiimillä viisi sopivinta. Sen jälkeen kutsuin tiimin ulkopuolisia henkilöitä kertomaan mielipiteensä aina eri väriteemoista ja vastausten pohjalta muokkasimme värimaailmaa lopulta lopulliseen siniharmaaseen.
+
+Myös asiakkaiden/tilaajien kanssa toimiminen on usein PO:n rooli. Tästä esimerkkinä oli opinto-ohjaajan kanssa palaverin pito, jossa pyysimme apuja Henkipöllön pesäsivujen kehittämiseen. Olimme jo viime joulukuussa pitäneet esittelykierroksen, jossa olimme käyneet kertomassa sovelluksestamme tälle samalle opinto-ohjaajalle sekä hänen kollegalleen. Nyt saimme esitellä mitä olemme saaneet aikaan ja kuinka sovellus oli kehittynyt joulukuusta. Nyt saimme oikeasti soveltaa heidän osaamistaan sovellukseemme ja sitä kautta tehdä sovelluksemme sisällöstä merkittävämpää ja hyödyllisempää käyttäjillemme.
+
+Lisäksi PO:na toimin tarvittaessa muun tiimin roolien tukena. Esimerkiksi pidimme testaajien kanssa bugipalaverin, jossa he kertoivat löydetyistä bugeista ja pyysivät minua peilaamaan sovelluksen vision kannalta, onko bugien kriittisyys merkattu oikein. Opin tästä palaverista paljon myös testaustyöstä ja testaajat saivat varmistuksen, että ovat oikeilla jäljillä bugi-raportoinnissaan.
+
+## Muut aikaansaannokset kurssin aikana
+
 * [Liiketoimintasuunnitelman esitysmateriaalit](https://jamkstudent-my.sharepoint.com/:p:/g/personal/m2936_student_jamk_fi/EUvZ9TMCYqtJhHDpyegLaNcB_UtlJJ0N4xBFkNVfnMtSvw?e=v70rov)
 * [Sovelluksen kehittymisen tallentaminen videomateriaaleihin joka sprintin päätteeksi](https://jamkstudent-my.sharepoint.com/:f:/g/personal/m2936_student_jamk_fi/Eho25sOL17RGpsTXLsySCJMBFpXYJQcySCNihfif7jxGWg?e=WpaRh0)
 * [Demoesitysmateriaalien kasaaminen ja esittäminen demoon 1](https://jamkstudent-my.sharepoint.com/:p:/g/personal/m2936_student_jamk_fi/EY3kYf9rKwZBrkIxHETegA0BulTRuRZ2FO_SNjR9og-aIg?e=2KQPBm)
 * [Demoesitysmateriaalien kasaaminen ja esittäminen demoon 2](https://jamkstudent-my.sharepoint.com/:p:/g/personal/m2936_student_jamk_fi/EeM52B7zfy5AoBX6hmTWt4cBSmiVt3QSZM7RASylZq1ZhQ?e=QJKEk2)
 * [Mock up kurssitiedot ja kursseille tehtävät](https://jamkstudent-my.sharepoint.com/:w:/g/personal/m2936_student_jamk_fi/EXWVtOJTJr1Fkj-5na9JDUEBLtzj8ONln5wIYodPhkVTgQ?e=91GFnJ)
 * Tutustuminen sähköisiin allekirjoitustapoihin projektisopimuksen kannalta
-* Markkinointivideossa avustaminen
+* [Blogi-kirjoitus Henkipöllön roolista sovelluksessamme](https://lintukoto.ticorporate.fi/2020/03/27/henkipollo/)
+
+Edellisessä työpaikassani, ennen TIKO-opintojen alkua, olen oppinut olemaan pelkäämättä asioiden esittämistä. Tästä syystä kun on ollut liiketoimintasuunnitelman esittämistä tai demoesityksiä, olen ollut vapaaehtoinen hoitamaan ne. Olen yleensä saanut siihen parin avuksi, jotta ei tarvitse hoitaa sitä ihan yksin. Tykkään myös panostaa esitysmateriaaleihin, jotta niitä jaksaa seurata vaikkei meidän projektimme muuten kiinnostaisi hirveästi. Esitykset ovat siis erityisesti lisätyö, joka on työllistänyt minua joka kuukausi.
+
+Projektimme joutui turvautumaan suunnitelma B:hen kun JAMKilta ilmoitettiin, että emme voi käyttää ASION rajapintoja, koska juuri tänä keväänä ASIO vaihdetaan Pepiksi. Tämä vaati hieman mukautumista tilanteeseen ja päätimme tiimillä, että teemme vain vastaavaa mock-up dataa, jotta pystymme demoamaan sovelluksemme toimintaa. Vaihtoehtoisen kurssi- ja tehtävädatan kokoaminen ja kirjoittaminen oli minun tehtäväni, jotta sen voi vain liittää sovelluksen tietokantaan.
 
 ## Itsearviointi
