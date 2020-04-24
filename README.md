@@ -482,6 +482,7 @@ Lisäksi PO:na toimin tarvittaessa muun tiimin roolien tukena. Esimerkiksi pidim
 * [Mock up kurssitiedot ja kursseille tehtävät](https://jamkstudent-my.sharepoint.com/:w:/g/personal/m2936_student_jamk_fi/EXWVtOJTJr1Fkj-5na9JDUEBLtzj8ONln5wIYodPhkVTgQ?e=91GFnJ)
 * Tutustuminen sähköisiin allekirjoitustapoihin projektisopimuksen kannalta
 * [Blogi-kirjoitus Henkipöllön roolista sovelluksessamme](https://lintukoto.ticorporate.fi/2020/03/27/henkipollo/)
+* [Haastattelumateriaalin kasaaminen JAMKin sivuille](https://www.jamk.fi/fi/Koulutus/Liiketalouden-ala/tradenomi-tietojenkasittely/story-lintukoto/)
 
 Edellisessä työpaikassani, ennen TIKO-opintojen alkua, olen oppinut olemaan pelkäämättä asioiden esittämistä. Tästä syystä kun on ollut liiketoimintasuunnitelman esittämistä tai demoesityksiä, olen ollut vapaaehtoinen hoitamaan ne. Olen yleensä saanut siihen parin avuksi, jotta ei tarvitse hoitaa sitä ihan yksin. Tykkään myös panostaa esitysmateriaaleihin, jotta niitä jaksaa seurata vaikkei meidän projektimme muuten kiinnostaisi hirveästi. Esitykset ovat siis erityisesti lisätyö, joka on työllistänyt minua joka kuukausi.
 
@@ -489,7 +490,46 @@ Projektimme joutui turvautumaan suunnitelma B:hen kun JAMKilta ilmoitettiin, ett
 
 ## Itsearviointi
 
+#### Päätoimen ja sivutoimen suhde
+
+Koen että tekninen päätoimi ja PO:n sivurooli tukivat hyvin toisiaan. Oli helppo ymmärtää esimerkiksi työn vaatimuksia, hyväksymiskriteerejä ym. kun ymmärsi teknisestä puolta. PO:n rooli myös pysyi sivutoimena, koska käytin siihen keskimäärin kaksi päivää per sprintti eli 1/5 ajastani meni sivutoimeen ja muu päätoimeen ja kaikkeen muuhun. 
+
+Sivutoimeni painottui ajankäytöllisesti alkuvuoteen. Silloin käytin siihen selvästi eniten tunteja kun opittavaa oli paljon. Siksi se söi alussa päätoimeltani tunteja ja tuntui että pääsin vähän hitaasti käyntiin. Kun PO-roolin toimet oli sisäistetty, oli helppo rytmittää sen vaatima työ sprinttiin. Alla esimerkki tavallisen kahden viikon sprintin rytmistäni. Tietysti tammikuussa PO-toimi vei enemmän aikaa kuin huhtikuussa, mutta suhde on kuitenkin tasapainossa pitkällä aikavälillä.
+
 |   |        Ma        |            Ti        | Ke |       To       |       Pe        |
 |---|------------------|----------------------|----|----------------|-----------------|
 | 1 | Planning (1-2 h) | PO-miitti (1 -1,5 h) |    |                |                 |
 | 2 |                  | PO-miitti (1- 1,5 h) |    | Grooming (4 h) |  Grooming (4 h) |
+
+Myös muut työt saattoivat viedä sprintistä pitkät pätkät. Esimerkiksi esitysmateriaalien kasaukseen meni aina pari päivää ja lisäksi yksi päivä esityksen harjoittelua. Mutta loppujen lopuksi päätyö pysyi selvästi päätyönä ja siitä olen iloinen.
+
+#### Mihin tähtään?
+
+Uratoiveena minulla on jatkaa teknisellä puolella. Haluan oppia hyväksi perusohjelmoijaksi. Koska oppini backendistä jäivät hieman hatariksi, luulen, että on hyvä ottaa haltuun ensin frontend ja kehittää backend-taitojaan pikkuhiljaa siinä sivussa. PO:na toimiminen antoi minulle myös kipinän siihen, että voisin pärjätä tuoteomistajan kaltaisissa rooleissa. Minulla on aiempaa työhistoriaa esimiehenä, joten niiden taitojen yhdistäminen ketterien menetelmien maailmaan inspiroi minua myös haaveilemaan roolista tiiminvetäjänä joku päivä.
+
+Ensimmäiset askeleet ohjelmoinnin urapolusta tulen ottamaan tänä kesänä, kun sain maaliskuussa tietää saavani kesätöitä Angular-pohjaisen käyttöliittymän junnukehittäjänä. Työhaastatteluissa arvostettiin paljon TC:n oppeja vaikka kurssi oli vasta puolivälissä siinä vaiheessa. Se että olin osana tekemässä Angular-sovellusta kuulosti työnantajalle todella hyvältä. Lisäksi se, että käytämme kouluprojektin toteuttamiseen ketteriä menetelmiä, oli myös iso bonus. Täällä oppimani taidot Angularin ja scrumin parissa auttavat minua urahaaveissani.
+
+Uskon, että minulla on myös monia ominaisuuksia joista on hyötyä tulevaisuudessa: 
+* Rohkeus kohdata ihmisiä ja esiintyä 
+* Kehittää asioita oma-aloitteisesti 
+* Uteliaisuus ja halu kehittyä ammatillisesti
+* Tunnen myös rajani, koska olen jo kokenut yhden burnoutin elämäni aikana, eli en polta jatkossa kynttilääni molemmista päistä 
+* Hyvä tiimipelaaja
+
+### Missä onnistuin?
+
+Olen todella ylpeä kaikesta mitä ehdin saada aikaan. Teknisessä mielessä kehityksen näkee jo siitä että siirryin tekemään pelkistä html-sivuista jotain monimutkaisempaa, joka vaatii myös typescript-osaamista ja Angularin rakenteen hahmottamista. Se otti aikansa, mutta tulos on sellainen kuin halusin sen olevan.
+
+Opiskelin myös 3. sprintissä backendin perusteet ja sen jälkeen ymmärsin paremmin sovelluksemme palvelinpuolta. En olisi osannut tehdä sitä itse, mutta minulle jo ymmärryskin oli voitto. Sen pohjalta sain myös tehtyä web-sovelluskehityksen tehtävät loppuun ja läpäistyä sen kurssin.
+
+Muutenkin opin lukemaan koodia ja hahmottamaan sen merkityksen paremmin. Tarkistin monia pull requesteja ja niiden kautta opin myös muiden tekemästä koodista paljon. Opiskelin sovelluksemme koodia usein, jotta ymmärtäisin muiden koodaamien palasten logiikan ja se avarsi ymmärrystäni hyvin.
+
+Aiemmin mainituista syistä, olen myös tyytyväinen suoritukseeni PO:na sekä edustustyöhöni sovelluksen puolesta. Oli se sitten sovelluksen esittelyä demoissa tai avajaispäivänä, tai palaverin pitoa opinto-ohjaajan kanssa. Koen, että onnistuin kertomaan sovelluksesta hyvin. PO:na huomasin että tiimi sisäisti tuotteen vision hyvin ja teki pääsääntöisesti oikeita, priorisoituja asioita tuotteen kehittmisen eteen.
+
+### Missä pitää vielä kehittyä?
+
+Ohjelmointitaidot kehittyvät vain ohjelmoimalla. Minulla on hyvin lyhyt kokemus ohjelmoinnista, koska olen oppinut sen vasta tässä koulutuksessa. Siksi tiedän, että saan tehdä vielä paljon töitä ja monta riviä koodia, että kehityn sille tasolle mistä olisi työelämässä hyötyä. Judun turvautumaan vielä paljon tutoriaaleihin ja muihin apumateriaaleihin, mutta oli myös ilo huomata että kevään mittaan käytetyt materiaalit muuttuivat myös hieman ammatillisemmiksi.
+
+Kun corona iski ja siirryimme etätyöhön, huomasin kuinka puutteelliset omat etätyötaidot olivat. Totta kai siinä vaikutti alkuhämmennys, omien vanhempien sairastuminen ym. Mutta siinä opin itsesäni, että tässä vaiheessa kun työskentely on 80 % pelkkää uuden oppimista, tavalliset etätyöohjeet eivät olleet hirveän sovellettavissa minulle. Tarvitsen tiimin ja sparrauksen mahdollisuuden. Kynnys ottaa yhteyttä keneenkään maaliskuun lopulla oli suuri. Tilanteeseen tottui lopulta, mutta huhtikuun tulosten osalta näkee, että etätyöskentely ei ole niin tehokasta kuin työskentely matarankadulla.
+
+Tämä kehityskohde poistuu oikeastaan sillä, että saa vain kehittyä ohjelmoinnissa, mutta olen usein hieman kärsimätön oppija. Halu oppia ja kehittyä johtaa siihen, että turhautuu välillä siihen oppimiseen kuluvaan aikaan. Pitäisi myös kehitellä hyviä oppimisrutiineja, jotka tukevat mielenkiinnon ylläpitämistä ja antaisivat edes pieniä onnistumisen tunteita ennen kuin tulee se oivallus ja onnistuminen.
