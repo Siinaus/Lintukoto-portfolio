@@ -488,3 +488,8 @@ Edellisessä työpaikassani, ennen TIKO-opintojen alkua, olen oppinut olemaan pe
 Projektimme joutui turvautumaan suunnitelma B:hen kun JAMKilta ilmoitettiin, että emme voi käyttää ASION rajapintoja, koska juuri tänä keväänä ASIO vaihdetaan Pepiksi. Tämä vaati hieman mukautumista tilanteeseen ja päätimme tiimillä, että teemme vain vastaavaa mock-up dataa, jotta pystymme demoamaan sovelluksemme toimintaa. Vaihtoehtoisen kurssi- ja tehtävädatan kokoaminen ja kirjoittaminen oli minun tehtäväni, jotta sen voi vain liittää sovelluksen tietokantaan.
 
 ## Itsearviointi
+
+|   | Ma       | Ti        | Ke | To       | Pe        |
+|---|----------|-----------|----|----------|-----------|
+| 1 | Planning | PO-miitti |    |          |           |
+| 2 |          | PO-miitti |    | Grooming |  Grooming |
