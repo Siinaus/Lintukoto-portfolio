@@ -1,0 +1,90 @@
+/* tekstikentän muotoilut*/
+.tekstit {
+  width: 470px;
+  position: absolute;
+  top: 40px;
+  left: 15%;
+  text-align: center;
+  margin: 4em auto;
+  color: #fefefd;
+}
+
+/* sisäänkirjautumislomakkeen muotoilut*/
+.login {
+  width: 360px;
+  padding: 1em;
+  position: absolute;
+  top: 150px;
+  left: 60%;
+  text-align: center;
+  margin: 4em auto;
+  color: white;
+}
+
+input,
+h2 {
+  margin: 0.3em auto;
+  display: block;
+}
+label {
+  width: 70%;
+  margin: 0 auto;
+}
+h2,
+label {
+  text-align: center;
+  position: relative;
+}
+.kirjautumisnappi {
+  margin-top: 10px;
+}
+/* otsikon muotoilut*/
+.otsikko {
+  text-align: center;
+  position: relative;
+  width: 50%;
+  display: inline-block;
+}
+
+/* kuvan muotoilut*/
+#lintukoto_logo {
+  width: 470px;
+}
+.kuva {
+  text-align: center;
+}
+#submit-btn {
+  margin: 1em auto;
+  width: 60%;
+  display: block;
+  /*responsiivisuus*/
+}
+@media (max-width: 991px) {
+  .login {
+    text-align: center;
+    position: relative;
+    left: 0px;
+    top: 0px;
+  }
+  .tekstit {
+    text-align: center;
+    position: relative;
+    left: 0px;
+    top: 0px;
+  }
+
+  .info {
+    text-align: center;
+    position: relative;
+    max-width: 500px;
+    left: 0px;
+    top: 0px;
+  }
+
+  .otsikko {
+    text-align: center;
+    position: relative;
+    top: 0px;
+    margin: 10px;
+  }
+}
